@@ -1,0 +1,19 @@
+{
+  "name": "pavel-ib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Usapix/pavel-ib.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Usapix/pavel-ib/issues"
+  },
+  "homepage": "https://github.com/Usapix/pavel-ib#readme"
+}
