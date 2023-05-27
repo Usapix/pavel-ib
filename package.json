@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Usapix/pavel-ib/issues"
   },
-  "homepage": "https://github.com/Usapix/pavel-ib#readme"
+  "homepage": "https://github.com/Usapix/pavel-ib#readme",
+  "dependencies": {
+    "webpack": "^5.84.1",
+    "webpack-cli": "^5.1.1"
+  }
 }
