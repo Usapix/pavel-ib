@@ -12,6 +12,10 @@
   },
   "author": "",
   "license": "ISC",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
   "bugs": {
     "url": "https://github.com/Usapix/pavel-ib/issues"
   },
