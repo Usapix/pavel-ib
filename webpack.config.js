@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default {
-  entry: "./src/scripts/index.js",
+  entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "main.js"
@@ -22,7 +22,22 @@ export default {
             options: { minimize: true },
           }
         ]
-      }
+      }, {
+        test: /\.s[ac]ss$/i,
+        use: [
+          "style-loader",
+          "css-loader",
+          "sass-loader",
+          {
+            loader: "sass-resources-loader",
+            options: {
+              resources: [
+                "src/main.scss"
+              ]
+            }
+          }
+        ],
+      },
     ],
   },
   plugins: [
@@ -38,7 +53,7 @@ export default {
     compress: true,
     port: 3000,
     static: {
-      directory: __dirname,
+      directory: path.join(__dirname, "src"),
     },
   },
 }
