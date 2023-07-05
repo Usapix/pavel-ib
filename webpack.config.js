@@ -32,11 +32,14 @@ export default {
             loader: "sass-resources-loader",
             options: {
               resources: [
-                "src/main.scss"
+                "src/styles/variables/vars.scss"
               ]
             }
           }
         ],
+      }, {
+        test: /\.(woff2?|eot|ttf|otf)$/i,
+        type: 'asset/resource',
       },
     ],
   },
