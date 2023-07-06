@@ -32,7 +32,7 @@ export default {
             loader: "sass-resources-loader",
             options: {
               resources: [
-                "src/styles/variables/vars.scss"
+                "src/styles/variables/index.scss"
               ]
             }
           }
