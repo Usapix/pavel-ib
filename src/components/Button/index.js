@@ -9,7 +9,7 @@ const Button = ({ onClick, title, className }) => {
   buttonElement.classList.add(className);
   buttonElement.addEventListener("click", onClick);
   
-  return buttonElement 
+  return buttonElement
 };
 
 export default Button;

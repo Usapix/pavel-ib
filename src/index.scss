@@ -1,7 +1,24 @@
+@import "styles/variables/index.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   font-family: "Inter";
+}
 
-  body {
-    background-color: #7e6666;
-  }
+body {
+  padding: 0;
+  margin: 0;
+
+  background-color: $light-main-background;
+}
+
+.container {
+  width: $mobile-resolution;
+  padding: 0 20px;
+  margin: 0 auto;
 }

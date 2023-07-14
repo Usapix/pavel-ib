@@ -6,6 +6,7 @@ import "./index.scss";
 
 const header = htmlToElement(Header);
 
+/*
 const customButton = Button({
   onClick: () => console.log("button has been click"),
   title: "click me!",
@@ -13,5 +14,6 @@ const customButton = Button({
 });
 
 header.appendChild(customButton);
+*/
 
 export default header;
