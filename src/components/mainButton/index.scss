@@ -1,0 +1,10 @@
+.button {
+  color: $button-textColor;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+
+  border-radius: 55px;
+  border: none;
+  background-color: $button-background;
+  cursor: pointer;
+}

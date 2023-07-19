@@ -1,0 +1,12 @@
+.alt-button {
+  display: block;
+  padding: 2px 10px;
+  width: max-content;
+
+  font-size: 14px;
+  text-decoration: none;
+  color: $light-altButton-color;
+  
+  border: 1px solid $light-altButton-color;
+  border-radius: 40px;
+}

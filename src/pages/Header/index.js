@@ -1,6 +1,6 @@
 import htmlToElement from "../../utils/htmlToElement.js";
 import Header from "./index.html";
-import Button from "../../components/Button/index.js";
+import Button from "../../components/mainButton/index.js";
 
 import "./index.scss";
 
