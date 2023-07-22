@@ -5,6 +5,7 @@ import Header from "./pages/Header/index.js";
 import Intro from "./pages/Intro/index.js";
 import HowHelp from "./pages/How-help/index.js";
 import Testing from "./pages/Testing/index.js";
+import Feedback from "./pages/feedback/index.js";
 
 const main = document.querySelector(".main-content");
 
@@ -12,3 +13,4 @@ document.body.prepend(Header);
 main.append(Intro);
 main.append(HowHelp);
 main.append(Testing);
+main.append(Feedback);
