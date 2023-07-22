@@ -1,0 +1,50 @@
+.testing {
+  margin-top: 80px;
+}
+
+.testing .container {
+  position: relative;
+
+  padding-top: 30px;
+
+  border-radius: 6px 6px 0 0;
+  overflow: hidden;
+  background-color: $light-content-background;
+  border-bottom: 1px solid $light-main-text;
+}
+
+.testing__title {
+  margin-bottom: 33px;
+}
+
+.testing__glare {
+  position: absolute;
+  right: 0;
+  top:0;
+}
+
+.testing__up-wrapper {
+  width: 87%;
+}
+
+.testing__up-wrapper,
+.testing__bottom-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  column-gap: 5px;
+}
+
+.testing__service {
+  padding-left: 9px;
+  padding-right: 9px;
+  margin-bottom: -1px;
+}
+
+.testing__up-wrapper .testing__service:first-child {
+  flex-grow: 1;
+}
+
+.testing__bottom-wrapper .testing__service:first-child {
+  flex-grow: 1;
+}
