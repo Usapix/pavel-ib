@@ -6,6 +6,7 @@ import Intro from "./pages/Intro/index.js";
 import HowHelp from "./pages/How-help/index.js";
 import Testing from "./pages/Testing/index.js";
 import Feedback from "./pages/feedback/index.js";
+import About from "./pages/about/index.js";
 
 const main = document.querySelector(".main-content");
 
@@ -14,3 +15,4 @@ main.append(Intro);
 main.append(HowHelp);
 main.append(Testing);
 main.append(Feedback);
+main.append(About);
