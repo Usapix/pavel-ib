@@ -37,26 +37,5 @@
 }
 
 .how-help__list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 0;
   margin-top: 22px;
-
-  list-style: none;
 }
-
-.how-help__item {
-  min-height: 122px;
-  padding: 20px 10px 30px 10px;
-
-  line-height: 24px;
-
-  background-color: $light-content-background;
-  border-radius: 6px;
-}
-
-.how-help__item-text {
-  margin: 0;
-}
-

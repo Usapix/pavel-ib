@@ -1,0 +1,28 @@
+.work-together {
+  margin-top: 80px;
+}
+
+.work-together__title {
+  margin: 0;
+}
+
+.work-together__title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.work-together__title-wrapper svg {
+  margin-right: 15px;
+}
+
+.work-together__subtitle {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-size: 20px;
+}
+
+.work-together__item {
+  min-height: 190px;
+}
