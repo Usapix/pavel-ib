@@ -5,10 +5,11 @@ import Header from "./pages/Header/index.js";
 import Intro from "./pages/Intro/index.js";
 import HowHelp from "./pages/How-help/index.js";
 import Testing from "./pages/Testing/index.js";
-import Feedback from "./pages/feedback/index.js";
-import About from "./pages/about/index.js";
+import Feedback from "./pages/Feedback/index.js";
+import About from "./pages/About/index.js";
 import WorkTogether from "./pages/Work-together/index.js";
-import questions from "./pages/questions/index.js";
+import Questions from "./pages/Questions/index.js";
+import Contacts from "./pages/Contacts/index.js";
 
 const main = document.querySelector(".main-content");
 
@@ -19,4 +20,5 @@ main.append(Testing);
 main.append(Feedback);
 main.append(About);
 main.append(WorkTogether);
-main.append(questions);
+main.append(Questions);
+main.append(Contacts);

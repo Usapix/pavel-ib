@@ -1,0 +1,50 @@
+.contacts {
+  margin-top: 57px;
+}
+
+.contacts .container {
+  position: relative;
+
+  padding-top: 30px;
+
+  background-color: $light-content-background;
+  border-radius: 6px 6px 0 0;
+  border-bottom: 1px solid $light-altButton-color;
+}
+
+.contacts__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  align-items: baseline;
+}
+
+.contacts__title {
+  margin-bottom: 12px;
+}
+
+.contacts__telegram,
+.contacts__email {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 9px;
+  gap: 10px;
+
+  backdrop-filter: blur(1px);
+
+  font-size: 16px;
+}
+
+.contacts__email {
+  margin-bottom: -0.6px;
+}
+
+.contacts__glare {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  pointer-events: none;
+}
