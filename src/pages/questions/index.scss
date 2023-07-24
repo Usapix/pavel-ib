@@ -1,0 +1,21 @@
+.questions {
+  margin-top: 80px;
+}
+
+.questions__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  margin-top: 40px;
+
+  list-style: none;
+}
+
+.questions__item-expander {
+  text-align: left;
+}
+
+.questions__item-expander svg {
+  flex-shrink: 0;
+}

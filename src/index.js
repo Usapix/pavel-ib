@@ -8,6 +8,7 @@ import Testing from "./pages/Testing/index.js";
 import Feedback from "./pages/feedback/index.js";
 import About from "./pages/about/index.js";
 import WorkTogether from "./pages/Work-together/index.js";
+import questions from "./pages/questions/index.js";
 
 const main = document.querySelector(".main-content");
 
@@ -18,3 +19,4 @@ main.append(Testing);
 main.append(Feedback);
 main.append(About);
 main.append(WorkTogether);
+main.append(questions);
