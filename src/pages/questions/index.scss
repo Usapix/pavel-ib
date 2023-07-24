@@ -1,5 +1,19 @@
 .questions {
-  margin-top: 80px;
+  margin-top: 61px;
+}
+
+.questions .container {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.questions__glare {
+  position: absolute;
+  right: -100px;
+  top: 20px;
+
+  pointer-events: none;
 }
 
 .questions__list {
