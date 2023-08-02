@@ -11,6 +11,7 @@ import WorkTogether from "./pages/Work-together/index.js";
 import Questions from "./pages/Questions/index.js";
 import Contacts from "./pages/Contacts/index.js";
 import MakeSafe from "./pages/Make-safe/index.js";
+import Footer from "./pages/Footer/index.js";
 
 const main = document.querySelector(".main-content");
 
@@ -24,3 +25,4 @@ main.append(WorkTogether);
 main.append(Questions);
 main.append(Contacts);
 main.append(MakeSafe);
+main.append(Footer);
