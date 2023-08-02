@@ -51,3 +51,24 @@ body {
 .description-card-list__text {
   margin: 0;
 }
+
+.main-input {
+  margin: 0;
+}
+
+.main-input__element {
+  width: 100%;
+  padding: 8px;
+
+  background: none;
+  border: none;
+  border-bottom: 1px solid $light-main-text;
+}
+
+.main-input__element::placeholder,
+.main-input__element {
+  font-family: "Inter";
+  font-size: 16px;
+
+  color: $light-dull-text;
+}
