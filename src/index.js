@@ -1,28 +1,17 @@
-import "./index.scss";
-import "./fonts/fonts.scss";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-import Header from "./pages/Header/index.js";
-import Intro from "./pages/Intro/index.js";
-import HowHelp from "./pages/How-help/index.js";
-import Testing from "./pages/Testing/index.js";
-import Feedback from "./pages/Feedback/index.js";
-import About from "./pages/About/index.js";
-import WorkTogether from "./pages/Work-together/index.js";
-import Questions from "./pages/Questions/index.js";
-import Contacts from "./pages/Contacts/index.js";
-import MakeSafe from "./pages/Make-safe/index.js";
-import Footer from "./pages/Footer/index.js";
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
-const main = document.querySelector(".main-content");
-
-document.body.prepend(Header);
-main.append(Intro);
-main.append(HowHelp);
-main.append(Testing);
-main.append(Feedback);
-main.append(About);
-main.append(WorkTogether);
-main.append(Questions);
-main.append(Contacts);
-main.append(MakeSafe);
-main.append(Footer);
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
