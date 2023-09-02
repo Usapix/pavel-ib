@@ -1,0 +1,22 @@
+.expander {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  padding-bottom: 5px;
+
+  font-family: "Anonymous Pro";
+  font-size: 20px;
+  line-height: 27px;
+  color: $light-title-color;
+  
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-bottom: 1px solid $light-main-text;
+}
+
+.expander svg {
+  align-self: flex-start;
+}

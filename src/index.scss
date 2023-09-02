@@ -1,0 +1,20 @@
+@import "./styles/variables/index.scss";
+@import "./styles/index.scss";
+
+/* Sections */
+
+@import "./sections/Header/Header.scss";
+@import "./sections/Intro/Intro.scss";
+@import "./sections/HowHelp/HowHelp.scss";
+@import "./sections/Testing/Testing.scss";
+@import "./sections/Feedback/Feedback.scss";
+@import "./sections/About/About.scss";
+@import "./sections/WorkTogether/WorkTogether.scss";
+@import "./sections/Questions/Questions.scss";
+@import "./sections/Contacts/Contacts.scss";
+@import "./sections/MakeSafe/MakeSafe.scss";
+@import "./sections/Footer/Footer.scss";
+
+/* Components */
+
+@import "./components/Expander/Expander.scss";

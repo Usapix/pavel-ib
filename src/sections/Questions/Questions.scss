@@ -1,0 +1,35 @@
+.questions {
+  margin-top: 61px;
+}
+
+.questions .container {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.questions__glare {
+  position: absolute;
+  right: -100px;
+  top: 20px;
+
+  pointer-events: none;
+}
+
+.questions__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  margin-top: 40px;
+
+  list-style: none;
+}
+
+.questions__item-expander {
+  text-align: left;
+}
+
+.questions__item-expander svg {
+  flex-shrink: 0;
+}

@@ -1,0 +1,41 @@
+.how-help {
+  margin-top: 80px;
+}
+
+.how-help__tools-text {
+  position: relative;
+
+  display: inline;
+  margin-right: 4px;
+
+  line-height: 42px;
+}
+
+.how-help__glare {
+  position: absolute;
+  left: -70px;
+  top: -50px;
+
+  width: 150px;
+  height: 150px;
+
+  filter: blur(40px);
+  transform: rotate(-57.95deg);
+  pointer-events: none;
+}
+
+.how-help__title {
+  margin-bottom: 23px;
+}
+
+.how-help__tool {
+  display: inline-block;
+}
+
+.how-help__tool:not(:first-of-type) {
+  margin-right: 10px;
+}
+
+.how-help__list {
+  margin-top: 22px;
+}

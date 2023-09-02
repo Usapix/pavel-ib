@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter";
+}
+
+body {
+  width: 320px;
+  padding: 0;
+  margin: 0 auto;
+
+  color: $light-main-text;
+
+  background-color: $light-main-background;
+}
+
+.container {
+  min-width: $mobile-resolution;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.break-line {
+  display: block;
+}
+
+.alt-button {
+  display: block;
+  padding: 2px 10px;
+  width: max-content;
+
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  color: $light-altButton-color;
+  
+  border: 1px solid $light-altButton-color;
+  border-radius: 40px;
+}
+
+.title {
+  font-family: "Anonymous Pro";
+  font-weight: 400;
+  line-height: 130%;
+  color: $light-title-color;
+}
+
+.button {
+  color: $button-textColor;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+
+  border-radius: 55px;
+  border: none;
+  background-color: $button-background;
+  cursor: pointer;
+}
+
+.description-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.description-card-list__item {
+  min-height: 122px;
+  padding: 20px 10px 30px 10px;
+
+  line-height: 24px;
+
+  background-color: $light-content-background;
+  border-radius: 6px;
+}
+
+.description-card-list__text {
+  margin: 0;
+}
+
+.main-input {
+  margin: 0;
+}
+
+.main-input__element {
+  width: 100%;
+  padding: 8px;
+
+  background: none;
+  border: none;
+  border-bottom: 1px solid $light-main-text;
+}
+
+.main-input__element::placeholder,
+.main-input__element {
+  font-family: "Inter";
+  font-size: 16px;
+
+  color: $light-dull-text;
+}
