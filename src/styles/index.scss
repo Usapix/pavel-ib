@@ -20,9 +20,25 @@ body {
 
 .container {
   min-width: $mobile-resolution;
-  max-width: 1779px;
+  max-width: 1690px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+.section-wrap {
+  margin-top: 80px;
+}
+
+@media (min-width: 1024px) {
+  .section-wrap {
+    margin-top: 130px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .section-wrap {
+    margin-top: 150px;
+  }
 }
 
 .main-content {
@@ -70,6 +86,24 @@ body {
   font-weight: 400;
   line-height: 130%;
   color: $light-title-color;
+}
+
+@media (min-width: 500px) {
+  .title {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 650px) {
+  .title {
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 744px) {
+  .title {
+    font-size: 50px;
+  }
 }
 
 .button {
