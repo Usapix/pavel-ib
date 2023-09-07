@@ -9,9 +9,9 @@ html {
 }
 
 body {
-  width: 320px;
   padding: 0;
   margin: 0 auto;
+  min-width: 320px;
 
   color: $light-main-text;
 
@@ -20,8 +20,31 @@ body {
 
 .container {
   min-width: $mobile-resolution;
+  max-width: 1779px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+.main-content {
+  overflow: hidden;
+}
+
+@media (min-width: 744px) {
+  .container {
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: 1110px) {
+  .container {
+    padding: 0 80px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    padding: 0 36px;
+  }
 }
 
 .break-line {

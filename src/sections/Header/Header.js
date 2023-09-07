@@ -19,6 +19,44 @@ function Header() {
               </svg>
             </a>
           </div>
+          <div className="main-header__glare"> 
+            <svg width="1086" height="497" viewBox="0 0 1086 497" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_f_239_629)">
+              <ellipse cx="543.288" cy="78.2966" rx="317.5" ry="150" transform="rotate(20.1745 543.288 78.2966)" fill="#97EAAF" fill-opacity="0.4"/>
+              </g>
+              <defs>
+              <filter id="filter0_f_239_629" x="0.761719" y="-340.076" width="1085.05" height="836.745" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+              <feGaussianBlur stdDeviation="120" result="effect1_foregroundBlur_239_629"/>
+              </filter>
+              </defs>
+            </svg>
+          </div>
+          <nav className="main-header__navigation">
+            <ul className="main-header__navigation-list">
+              <li className="main-header__navigation-item">
+              <a href="" className="main-header__navigation-link">
+                Услуги
+              </a>
+              </li>
+              <li className="main-header__navigation-item">
+              <a href="" className="main-header__navigation-link">
+                Обо мне
+              </a>
+              </li>
+              <li className="main-header__navigation-item">
+              <a href="" className="main-header__navigation-link">
+                Контакты
+              </a>
+              </li>
+              <li className="main-header__navigation-item">
+              <a href="" className="main-header__navigation-link">
+                Вопросы
+              </a>
+              </li>
+            </ul>
+          </nav>
           <button className="main-header__burger">
             <span></span>
             <span></span>

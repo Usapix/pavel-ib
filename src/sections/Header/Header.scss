@@ -2,12 +2,34 @@
   padding-top: 20px;
 }
 
+.main-header__logo {
+  width: 80px;
+  height: 19px;
+}
+
+.main-header__logo svg {
+  width: 100%;
+  height: 100%;
+}
+
 .main-header__content-wrapper {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
-  padding-bottom: 4px;
+  padding-bottom: 7px;  
   
   border-bottom: 1px solid $light-main-text;
+
+  overflow: visible;
+}
+
+.main-header__glare {
+  display: none;
+}
+
+.main-header__navigation {
+  display: none;
 }
 
 .main-header__burger {
@@ -31,4 +53,137 @@
 
   border-radius: 2px;
   background-color: $light-main-text;
+}
+
+@media (min-width: 500px) {
+  .main-header__logo {
+    width: 150px;
+    height: 35px;
+  }
+
+  .main-header__burger {
+    justify-content: center;
+    width: 40px;
+    height: 32px;
+  }
+
+  .main-header__burger span {
+    height: 4px;  
+  
+    border-radius: 2px;
+    background-color: $light-main-text;
+  }
+}
+
+@media (min-width: 744px) {
+  .main-header {
+    padding-top: 39px;
+  }
+
+  .main-header__content-wrapper {
+    padding-bottom: 8px;
+  }
+}
+
+@media (min-width: 940px) {
+  .main-header {
+    padding-top: 21px;
+  }
+  .main-header__content-wrapper {
+    align-items: center;
+  }
+
+  .main-header__navigation {
+    display: block;
+  }
+
+  .main-header__logo {
+    width: 163px;
+    height: 35px;
+  }
+  
+  .main-header__navigation-list {
+    display: flex;
+    gap: 15px;
+    margin: 0;
+
+    list-style: none;
+  }
+
+  .main-header__navigation-item {
+    min-width: 90px;
+  }
+
+  .main-header__navigation-link {
+    text-decoration: none;
+    color: $light-main-text;
+    font-size: 18px;
+  }
+
+  .main-header__burger {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-header {
+    padding-top: 0;
+  }
+
+  .main-header__content-wrapper {
+    padding-top: 31px;
+  }
+
+  .main-header__glare {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 55px;
+
+    display: block;
+  
+    pointer-events: none;
+  }
+
+  .main-header__glare svg {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-header__glare {
+    left: 10%;
+  }
+  
+  .main-header__navigation-list {
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .main-header__logo {
+    width: 180px;
+    height: 50px;
+  }
+
+  .main-header__content-wrapper {
+    padding-top: 37px;
+  }
+
+  .main-header__navigation-list {
+    gap: 40px;
+  }
+
+  .main-header__navigation-link {
+    font-size: 20px;
+  }
+
+  .main-header__glare {
+    left: 12%;
+  }
+
+  .main-header__glare svg {
+    width: 100%;
+  }
 }

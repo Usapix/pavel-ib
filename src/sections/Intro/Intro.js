@@ -22,16 +22,21 @@ function Intro() {
           </svg>
         </div>
         <div className="intro__content">
-          <ul className="intro__links-list">
-            <li className="intro__link-item">
-              <a href="index.html" className="intro__alt-button alt-button">E-mail</a>
-            </li>
-            <li className="intro__link-item">
-              <a href="index.html" className="intro__alt-button alt-button">Telegram</a>
-            </li>
-          </ul>
+          <div className="intro__links-wrapper">
+            <p className="intro__text">
+              Мои социальные сети:
+            </p>
+            <ul className="intro__links-list">
+              <li className="intro__link-item">
+                <a href="index.html" className="intro__alt-button alt-button">E-mail</a>
+              </li>
+              <li className="intro__link-item">
+                <a href="index.html" className="intro__alt-button alt-button">Telegram</a>
+              </li>
+            </ul>
+          </div>
           <h1 className="intro__title title">
-            Сохраняю бизнес в безопасности
+            Сохраняю бизнес <span className="break-line">в безопасности</span>
           </h1>
           <button className="intro__button button">Получить консультацию</button>
         </div>
