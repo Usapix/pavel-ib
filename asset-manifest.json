@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/pavel-ib/static/css/main.dd8d4858.css",
-    "main.js": "/pavel-ib/static/js/main.413faa92.js",
+    "main.css": "/pavel-ib/static/css/main.dbbbe4a1.css",
+    "main.js": "/pavel-ib/static/js/main.ef86af9a.js",
     "static/media/pavel.png": "/pavel-ib/static/media/pavel.4bc4a3849635075c42e2.png",
     "index.html": "/pavel-ib/index.html",
-    "main.dd8d4858.css.map": "/pavel-ib/static/css/main.dd8d4858.css.map",
-    "main.413faa92.js.map": "/pavel-ib/static/js/main.413faa92.js.map"
+    "main.dbbbe4a1.css.map": "/pavel-ib/static/css/main.dbbbe4a1.css.map",
+    "main.ef86af9a.js.map": "/pavel-ib/static/js/main.ef86af9a.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd8d4858.css",
-    "static/js/main.413faa92.js"
+    "static/css/main.dbbbe4a1.css",
+    "static/js/main.ef86af9a.js"
   ]
 }
