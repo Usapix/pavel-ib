@@ -1,6 +1,9 @@
-.make-safe .container {
+.make-safe__main-wrapper {
   padding-top: 20px;
   padding-bottom: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 -20px;
 
   background-color: $light-content-background;
 }
@@ -87,10 +90,272 @@
   color: $light-dull-text;
 }
 
+@media (min-width: 600px) {
+  .make-safe__submit-wrapper {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+  }
+
+  .make-safe__submit-wrapper > * {
+    width: calc(50% - 10px);
+  }
+}
+
 @media (min-width: 744px) {
   .make-safe {
     position: relative;
 
     margin-top: -271px;
+  }
+
+  .make-safe__main-wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 -50px;
+  }
+
+  .make-safe__inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 30px;
+  }
+
+  .make-safe__form-element:nth-child(1) {
+    width: 100%;
+  }
+
+  .make-safe__subtitle {
+    margin-top: 8px;
+  }
+
+  .make-safe__inputs .make-safe__form-element:first-child {
+    flex-basis: calc(50% - 10px);
+  }
+
+  .make-safe__inputs .make-safe__form-element:nth-child(2) {
+    flex-basis: calc(50% - 10px);
+  }
+
+  .make-safe__inputs .make-safe__form-element:nth-child(3) {
+    flex-basis: calc(50% - 10px);
+  }
+
+  .make-safe__subtitle {
+    font-size: 30px;
+  }
+
+  .make-safe__subtitle-textarea {
+    margin-top: 50px;
+  }
+
+  .main-input__element::placeholder, .main-input__element {
+    padding-left: 0;
+
+    font-size: 20px;
+  }
+
+  .make-safe__textarea-wrapper {
+    height: 240px;
+    padding: 28px 20px;
+
+    border-radius: 10px;
+  }
+
+  .make-safe__textarea {
+    padding: 13px 10px;
+    padding-left: 0;
+    padding-top: 5px;
+
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 900px) {
+  .make-safe__textarea-wrapper {
+    padding-right: 10px;
+  }
+
+  .make-safe__bottom-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+
+  .make-safe__textarea-element {
+    flex-basis: 67.5%;
+  }
+
+  .make-safe__submit-wrapper {
+    flex-basis: 32.5%;
+    flex-direction: column;
+    justify-content: flex-end
+  }
+
+  .make-safe__submit-wrapper > * {
+    width: 100%;
+  }
+
+  .make-safe__submit {
+    order: 2;
+    margin-top: 0;
+    padding: 10px 12px;
+    padding-right: 5px;
+  }
+
+  .make-safe__consent {
+    order: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .make-safe {
+    margin-top: -600px;
+  }
+
+  .make-safe__title {
+    position: relative;
+    z-index: 1;
+  }
+
+  .make-safe__inputs {
+    width: 70%;
+  }
+
+  .make-safe__submit {
+    font-size: 18px;
+    letter-spacing: -0.1px;
+  }
+}
+
+@media (min-width: 1110px) {
+  .make-safe__main-wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0;
+  }
+
+  .make-safe__submit {
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .make-safe__title {
+    margin-top: 90px;
+  }
+
+  .make-safe__title .break-line {
+    display: inline;
+  }
+
+  .make-safe__main-wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .make-safe__inputs {
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .make-safe__form-element:nth-child(1),
+  .make-safe__form-element:nth-child(2),
+  .make-safe__form-element:nth-child(3) {
+    width: auto;
+    flex-shrink: 0;
+    flex-basis: auto;
+  }
+
+  .make-safe__form-element:nth-child(1) .main-input {
+    width: auto;
+  }
+
+  .make-safe__form-element:nth-child(1) {
+    flex-basis: auto;
+  }
+
+  .make-safe__form-element:nth-child(2) {
+    flex-basis: auto;
+  }
+
+  .make-safe__form-element:nth-child(3) {
+    flex-basis: auto;
+  }
+
+  .make-safe__input {
+    padding: 12px 0;
+  }
+
+  .make-safe__inputs .make-safe__form-element:first-child {
+    flex-basis: 305px;
+  }
+
+  .make-safe__inputs .make-safe__form-element:nth-child(2) {
+    flex-basis: 325px;
+  }
+
+  .make-safe__inputs .make-safe__form-element:nth-child(3) {
+    flex-basis: 305px;
+  }
+
+  .make-safe__textarea-element.make-safe__form-element:nth-child(1) {
+    width: 54.5%;
+  }
+
+  .make-safe__textarea-wrapper {
+    padding-left: 30px;
+  }
+
+  .make-safe__submit {
+    padding: 10px 24px;
+  }
+
+  .make-safe__submit-wrapper {
+    align-items: flex-start;
+  }
+
+  .make-safe__submit-wrapper > * {
+    width: auto;
+  }
+}
+
+@media (min-width: 1600px) {
+  .make-safe__main-wrapper {
+    padding-left: 117px;
+    padding-right: 117px;
+  }
+
+  .make-safe__subtitle {
+    font-size: 34px;
+  }
+
+  .input__element::placeholder, 
+  .main-input__element {
+    font-size: 24px;
+  }
+
+  .make-safe__inputs .make-safe__form-element:first-child {
+    flex-basis: 405px;
+    order: 1;
+  }
+
+  .make-safe__inputs .make-safe__form-element:nth-child(2) {
+    flex-basis: 390px;
+    order: 3;
+  }
+
+  .make-safe__inputs .make-safe__form-element:nth-child(3) {
+    flex-basis: 390px;
+    order: 2;
+  }
+
+  .make-safe__textarea-element.make-safe__form-element:nth-child(1) {
+    flex-basis: auto;
+    width: 57.5%;
+  }
+
+  .make-safe__submit {
+    font-size: 22px;
   }
 }

@@ -104,7 +104,7 @@
     z-index: 1;
     width: calc(100% + 100px);
     height: 0.9px;
-    background-color: #414141;
+    background-color: $light-line-color;
   }
   
 
@@ -135,6 +135,8 @@
 @media (min-width: 1024px) {
   .contacts__main-wrapper {
     padding-top: 100px;
+
+    padding-bottom: 600px;
   }
 
   .contacts__wrapper {
@@ -218,6 +220,20 @@
     padding: 3px 16px;
 
     font-size: 30px;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .contacts__main-wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .contacts__wrapper::before {
+    left: -117px;
+
+    width: calc(100% + 117px + 60px);
   }
 }
 
