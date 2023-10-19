@@ -2,7 +2,7 @@ import React from "react";
 
 function Testing() {
   return (
-    <section className="testing section-wrap">
+    <section id="testing" className="testing section-wrap">
       <div className="container">
         <div className="testing__wrapper">
           <h2 className="testing__title title">

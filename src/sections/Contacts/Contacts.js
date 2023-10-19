@@ -3,7 +3,7 @@ import Expander from "../../components/Expander/Expander";
 
 function Contacts() {
   return (
-    <section className="contacts section-wrap">
+    <section id="contacts" className="contacts section-wrap">
       <div className="container">
         <div className="contacts__main-wrapper">  
           <svg className="contacts__glare contacts__glare--320" width="131" height="262" viewBox="0 0 131 262" fill="none" xmlns="http://www.w3.org/2000/svg">

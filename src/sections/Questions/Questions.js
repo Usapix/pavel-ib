@@ -3,7 +3,7 @@ import Expander from "../../components/Expander/Expander";
 
 function Questions() {
   return (
-    <section className="questions section-wrap">
+    <section id="questions" className="questions section-wrap">
       <div className="container">
         <h2 className="questions__title title">
           Что спрашивают <span className="break-line">чаще всего?</span>

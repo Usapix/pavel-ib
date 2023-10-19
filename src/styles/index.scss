@@ -6,6 +6,8 @@
 
 html {
   font-family: "Inter";
+
+  scroll-behavior: smooth;
 }
 
 body {
@@ -71,6 +73,10 @@ body {
 
 .break-line {
   display: block;
+}
+
+.off-scroll {
+  overflow: hidden;
 }
 
 .alt-button {

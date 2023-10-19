@@ -3,7 +3,7 @@ import Expander from "../../components/Expander/Expander";
 
 function About() {
   return (
-    <section className="about-me section-wrap">
+    <section id="about" className="about-me section-wrap">
       <div className="container">
         <h2 className="about-me__title title">
           Как я рос, <span className="break-line">рос и вырос</span>
