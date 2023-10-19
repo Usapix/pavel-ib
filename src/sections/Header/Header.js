@@ -3,15 +3,19 @@ import React from "react";
 function toggleMenu() {
   const button = document.querySelector('.main-header__burger')
   const menu = document.querySelector('.main-header__navigation')
-  const links = document.querySelectorAll('.main-header__navigation-link')
   const body = document.querySelector('body')
 
-  button.classList.toggle('main-header__burger--opened')
-  menu.classList.toggle('main-header__navigation--opened')
-  body.classList.toggle('off-scroll')
+  if (document.documentElement.clientWidth < 941) {
+    button.classList.toggle('main-header__burger--opened')
+    menu.classList.toggle('main-header__navigation--opened')
+    body.classList.toggle('off-scroll')
+  }
 }
 
 function Header() {
+  const button = document.querySelector('.main-header__burger')
+  const menu = document.querySelector('.main-header__navigation')
+  const body = document.querySelector('body')
 
   return (
     <header className="main-header">

@@ -140,6 +140,11 @@
     position: fixed;
     top: 20px;
     right: 20px;
+
+    @media (min-width: 744px) {
+      top: 39px;
+      right: 50px;
+    }
     
     span {
       position: absolute;
