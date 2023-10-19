@@ -10,6 +10,14 @@ function toggleMenu() {
     menu.classList.toggle('main-header__navigation--opened')
     body.classList.toggle('off-scroll')
   }
+
+  window.addEventListener('resize', () => {
+    if (document.documentElement.clientWidth > 941) {
+      button.classList.remove('main-header__burger--opened')
+      menu.classList.remove('main-header__navigation--opened')
+      body.classList.remove('off-scroll')
+    }
+  })
 }
 
 function Header() {
