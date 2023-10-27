@@ -209,9 +209,42 @@
   }
 
   .main-header__navigation-link {
+    position: relative;
+
     text-decoration: none;
     color: $light-main-text;
     font-size: 18px;
+
+    outline: 1px solid transparent;
+    outline-offset: 3px;
+    border-radius: 20px;
+
+    transition: outline 0.3s;
+
+    &::before {
+      content: '';
+  
+      position: absolute;
+      bottom: 0;
+      left: 0;
+  
+      display: block;
+      height: 1px;
+      width: 0%;
+  
+      background-color: $light-dull-text;
+  
+      transition: width .2s;
+    }
+  
+    @media (hover: hover) {
+      &:hover {
+        &::before {
+          width: 100%;
+        }
+      }
+    }
+    
   }
 
   .main-header__burger {

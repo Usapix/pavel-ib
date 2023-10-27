@@ -1,4 +1,8 @@
 .expander {
+  overflow: hidden;
+}
+
+.expander__button {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,6 +21,30 @@
   border-bottom: 1px solid $light-main-text;
 }
 
-.expander svg {
+.expander__svg {
   align-self: flex-start;
+
+  &--opened {
+    display: none;
+  }
+}
+
+.expander__content {
+  height: 0;
+
+  transition: height .3s;
+}
+
+.expander__checkbox:checked ~ .expander__content {
+  height: 70px;
+}
+
+.expander__checkbox:checked ~ .expander__button {
+  .expander__svg--opened {
+    display: block;
+  }
+
+  .expander__svg--closed {
+    display: none;
+  }
 }

@@ -95,16 +95,16 @@ function Questions() {
         </svg>
         <ul className="questions__list">
           <li className="questions__item">
-            <Expander componentClass="questions__item-expander" innerContent="Что такое пентест?"/>
+            <Expander componentClass="questions__item-expander" innerContent="Что такое пентест?" id='4'/>
           </li>
           <li className="questions__item">
-            <Expander componentClass="questions__item-expander" innerContent="Насколько часто необходимо проводить пентест?"/>
+            <Expander componentClass="questions__item-expander" innerContent="Насколько часто необходимо проводить пентест?" id='5'/>
           </li>
           <li className="questions__item">
-            <Expander componentClass="questions__item-expander" innerContent="Кому подходит пентест?"/>
+            <Expander componentClass="questions__item-expander" innerContent="Кому подходит пентест?" id='6'/>
           </li>
           <li className="questions__item">
-            <Expander componentClass="questions__item-expander" innerContent="Какое среднее время пентеста?"/>
+            <Expander componentClass="questions__item-expander" innerContent="Какое среднее время пентеста?" id='7'/>
           </li>
         </ul>
       </div>

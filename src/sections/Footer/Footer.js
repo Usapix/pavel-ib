@@ -8,16 +8,16 @@ function Footer() {
           <nav className="main-footer__nav">
             <ul className="main-footer__nav-list">
               <li className="main-footer__nav-item">
-                <a href="" className="main-footer__nav-link">Услуги</a>
+                <a href="#testing" className="main-footer__nav-link">Услуги</a>
               </li>
               <li className="main-footer__nav-item">
-                <a href="" className="main-footer__nav-link">Обо мне</a>
+                <a href="#about" className="main-footer__nav-link">Обо мне</a>
               </li>
               <li className="main-footer__nav-item">
-                <a href="" className="main-footer__nav-link">Контакты</a>
+                <a href="#contacts" className="main-footer__nav-link">Контакты</a>
               </li>
               <li className="main-footer__nav-item">
-                <a href="" className="main-footer__nav-link">Вопросы</a>
+                <a href="#questions" className="main-footer__nav-link">Вопросы</a>
               </li>
             </ul>
           </nav>

@@ -60,6 +60,8 @@
 
 .make-safe__textarea::-webkit-scrollbar {
   width: 7px;
+
+  cursor: pointer;
 }
 
 .make-safe__textarea::-webkit-scrollbar-track {
@@ -68,11 +70,15 @@
 
   background-color: $light-switch-background;
   border-radius: 6px;
+
+  cursor: pointer;
 }
 
 .make-safe__textarea::-webkit-scrollbar-thumb {
   background-color: $light-switch-background;
   border-radius: 6px;
+
+  cursor: pointer;
 }
 
 .make-safe__submit {

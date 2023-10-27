@@ -121,6 +121,19 @@
     padding: 8px 16px;
 
     font-size: 18px;
+
+    path {
+      transition: stroke .3s;
+    }
+    @media (hover: hover) {
+      &:hover,
+      &:focus {
+        path {
+          stroke: $light-buttonFont-color;
+        }
+      }
+      
+    }
   }
 
   .contacts__glare {

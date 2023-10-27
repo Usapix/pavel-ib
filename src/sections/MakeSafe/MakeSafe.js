@@ -2,7 +2,7 @@ import React from "react";
 
 function MakeSafe() {
   return (
-    <section className="make-safe">
+    <section id="makeSafe" className="make-safe">
       <div className="container">
         <div className="make-safe__main-wrapper">
           <h2 className="make-safe__title title">
@@ -45,7 +45,7 @@ function MakeSafe() {
                 </p>
               </div>
               <div className="make-safe__submit-wrapper">
-                <button className="make-safe__submit button">Записаться на консультацию</button>
+                <button className="make-safe__submit button" onClick={(e) => {e.preventDefault(); alert('Тут почта нужна)')}}>Записаться на консультацию</button>
                 <p className="make-safe__consent">
                   Нажимая на кнопку, вы даёте согласие на обработку персональных данных
                 </p>

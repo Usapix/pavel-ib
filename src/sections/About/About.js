@@ -19,13 +19,13 @@ function About() {
           </div>
           <ul className="about-me__expander-list">
             <li className="about-me__expander-item">
-              <Expander componentClass="about-me__expander" innerContent="Где я выступал"/>
+              <Expander componentClass="about-me__expander" innerContent="Где я выступал" id="1"/>
             </li>
             <li className="about-me__expander-item">
-              <Expander componentClass="about-me__expander" innerContent="Что писал"/>
+              <Expander componentClass="about-me__expander" innerContent="Что писал" id="2"/>
             </li>
             <li className="about-me__expander-item">
-              <Expander componentClass="about-me__expander" innerContent="Мой телеграм канал"/>
+              <Expander componentClass="about-me__expander" innerContent="Мой телеграм канал" id="3"/>
             </li>
           </ul>
         </div>
