@@ -26,11 +26,11 @@ function Testing() {
             <path d="M463.26 450.896C458.032 496.722 436.745 516.94 406.491 512.487C376.239 508.034 337.047 478.908 296.091 426.134C255.135 373.36 220.195 306.965 196.812 242.305C173.428 177.643 161.62 114.781 166.849 68.9555C172.077 23.1302 193.364 2.91187 223.618 7.36519C253.871 11.8183 293.062 40.9438 334.018 93.7177C374.974 146.492 409.914 212.887 433.297 277.547C456.682 342.209 468.489 405.071 463.26 450.896Z" stroke="white"/>
             <path d="M513.249 450.896C508.02 496.722 486.734 516.94 456.48 512.487C426.227 508.034 387.035 478.908 346.079 426.134C305.123 373.36 270.184 306.965 246.8 242.305C223.416 177.643 211.608 114.781 216.837 68.9555C222.065 23.1302 243.352 2.91187 273.606 7.36519C303.859 11.8183 343.05 40.9438 384.007 93.7177C424.963 146.492 459.902 212.887 483.285 277.547C506.67 342.209 518.477 405.071 513.249 450.896Z" stroke="white"/>
             <g filter="url(#filter0_f_445_1355)">
-            <ellipse cx="95" cy="190" rx="95" ry="190" transform="matrix(0.70503 0.709178 -0.121886 0.992544 217.125 -77.4141)" fill="#3BCC7C" fill-opacity="0.4"/>
+            <ellipse cx="95" cy="190" rx="95" ry="190" transform="matrix(0.70503 0.709178 -0.121886 0.992544 217.125 -77.4141)" fill="#3BCC7C" fillOpacity="0.4"/>
             </g>
             <defs>
-            <filter id="filter0_f_445_1355" x="0.0566406" y="-211.77" width="521.775" height="780.622" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <filter id="filter0_f_445_1355" x="0.0566406" y="-211.77" width="521.775" height="780.622" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+            <feFlood floodOpacity="0" result="BackgroundImageFix"/>
             <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
             <feGaussianBlur stdDeviation="95" result="effect1_foregroundBlur_445_1355"/>
             </filter>
@@ -39,12 +39,12 @@ function Testing() {
           <svg className="testing__glare testing__glare--1440" width="416" height="462" viewBox="0 0 416 462" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M710.71 262.093C706.255 275.282 694.944 284.84 678.172 290.777C661.402 296.715 639.232 299.009 613.186 297.714C561.097 295.124 493.616 278.182 423.1 247.486C352.583 216.79 292.424 178.169 252.163 140.559C232.03 121.753 216.895 103.219 207.92 86.075C198.945 68.9295 196.161 53.2367 200.616 40.0473C205.071 26.8579 216.382 17.3007 233.153 11.3629C249.923 5.42564 272.094 3.13091 298.14 4.42611C350.229 7.01631 417.71 23.9581 488.226 54.6542C558.743 85.3502 618.902 123.971 659.163 161.581C679.295 180.387 694.431 198.921 703.405 216.065C712.381 233.211 715.164 248.904 710.71 262.093Z" stroke="white"/>
             <g filter="url(#filter0_f_244_535)">
-            <ellipse cx="124.611" cy="116.924" rx="124.611" ry="116.924" transform="matrix(0.946827 0.321744 -0.341636 0.939832 287.184 -44.9932)" fill="#3BCC7C" fill-opacity="0.4"/>
+            <ellipse cx="124.611" cy="116.924" rx="124.611" ry="116.924" transform="matrix(0.946827 0.321744 -0.341636 0.939832 287.184 -44.9932)" fill="#3BCC7C" fillOpacity="0.4"/>
             </g>
             <path d="M796.71 262.093C792.255 275.282 780.944 284.84 764.172 290.777C747.402 296.715 725.232 299.009 699.186 297.714C647.097 295.124 579.616 278.182 509.1 247.486C438.583 216.79 378.424 178.169 338.163 140.559C318.03 121.753 302.895 103.219 293.92 86.075C284.945 68.9295 282.161 53.2367 286.616 40.0473C291.071 26.8579 302.382 17.3007 319.153 11.3629C335.923 5.42564 358.094 3.13091 384.14 4.42611C436.229 7.01631 503.71 23.9581 574.226 54.6542C644.743 85.3502 704.902 123.971 745.163 161.581C765.295 180.387 780.431 198.921 789.405 216.065C798.381 233.211 801.164 248.904 796.71 262.093Z" stroke="white"/>
             <defs>
-            <filter id="filter0_f_244_535" x="0.625" y="-252.018" width="729.197" height="714.013" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <filter id="filter0_f_244_535" x="0.625" y="-252.018" width="729.197" height="714.013" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+            <feFlood floodOpacity="0" result="BackgroundImageFix"/>
             <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
             <feGaussianBlur stdDeviation="120" result="effect1_foregroundBlur_244_535"/>
             </filter>

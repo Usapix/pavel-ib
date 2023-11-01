@@ -22,13 +22,13 @@ function Contacts() {
           </svg>
           <svg className="contacts__glare contacts__glare--1024" width="488" height="1037" viewBox="0 0 488 1037" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g filter="url(#filter0_f_907_1700)">
-            <ellipse cx="162.922" cy="205.556" rx="162.922" ry="205.556" transform="matrix(0.995168 -0.098183 0.583445 0.812152 160 237.992)" fill="#3BCC7C" fill-opacity="0.4"/>
+            <ellipse cx="162.922" cy="205.556" rx="162.922" ry="205.556" transform="matrix(0.995168 -0.098183 0.583445 0.812152 160 237.992)" fill="#3BCC7C" fillOpacity="0.4"/>
             </g>
             <path d="M799.568 841.743C790.514 895.211 754.055 919.182 702.286 914.558C650.527 909.934 583.535 876.724 513.588 815.991C443.64 755.259 384.016 678.537 344.16 603.615C304.297 528.679 284.261 455.658 293.315 402.189C302.369 348.721 338.827 324.75 390.597 329.374C442.356 333.998 509.347 367.208 579.295 427.94C649.243 488.673 708.867 565.395 748.723 640.317C788.586 715.253 808.621 788.274 799.568 841.743Z" stroke="white"/>
             <path d="M885.568 841.743C876.514 895.211 840.055 919.182 788.286 914.558C736.527 909.934 669.535 876.724 599.588 815.991C529.64 755.259 470.016 678.537 430.16 603.615C390.297 528.679 370.261 455.658 379.315 402.189C388.369 348.721 424.827 324.75 476.597 329.374C528.356 333.998 595.347 367.208 665.295 427.94C735.243 488.673 794.867 565.395 834.723 640.317C874.586 715.253 894.621 788.274 885.568 841.743Z" stroke="white"/>
             <defs>
-            <filter id="filter0_f_907_1700" x="0.382812" y="-18.7803" width="883.367" height="815.438" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <filter id="filter0_f_907_1700" x="0.382812" y="-18.7803" width="883.367" height="815.438" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+            <feFlood floodOpacity="0" result="BackgroundImageFix"/>
             <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
             <feGaussianBlur stdDeviation="120" result="effect1_foregroundBlur_907_1700"/>
             </filter>
@@ -36,11 +36,11 @@ function Contacts() {
           </svg>
           <svg className="contacts__alt-glare" width="505" height="876" viewBox="0 0 505 876" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g filter="url(#filter0_f_907_1699)">
-            <ellipse cx="375.607" cy="394.742" rx="375.607" ry="394.742" transform="matrix(-0.20965 -0.977776 0.781853 -0.623463 -283.582 806.282)" fill="#97EAAF" fill-opacity="0.4"/>
+            <ellipse cx="375.607" cy="394.742" rx="375.607" ry="394.742" transform="matrix(-0.20965 -0.977776 0.781853 -0.623463 -283.582 806.282)" fill="#97EAAF" fillOpacity="0.4"/>
             </g>
             <defs>
-            <filter id="filter0_f_907_1699" x="-612.291" y="-489.226" width="1117.19" height="1364.28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <filter id="filter0_f_907_1699" x="-612.291" y="-489.226" width="1117.19" height="1364.28" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+            <feFlood floodOpacity="0" result="BackgroundImageFix"/>
             <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
             <feGaussianBlur stdDeviation="120" result="effect1_foregroundBlur_907_1699"/>
             </filter>

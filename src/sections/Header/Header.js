@@ -46,11 +46,11 @@ function Header() {
           <div className="main-header__glare"> 
             <svg width="1086" height="497" viewBox="0 0 1086 497" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_f_239_629)">
-              <ellipse cx="543.288" cy="78.2966" rx="317.5" ry="150" transform="rotate(20.1745 543.288 78.2966)" fill="#97EAAF" fill-opacity="0.4"/>
+              <ellipse cx="543.288" cy="78.2966" rx="317.5" ry="150" transform="rotate(20.1745 543.288 78.2966)" fill="#97EAAF" fillOpacity="0.4"/>
               </g>
               <defs>
-              <filter id="filter0_f_239_629" x="0.761719" y="-340.076" width="1085.05" height="836.745" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <filter id="filter0_f_239_629" x="0.761719" y="-340.076" width="1085.05" height="836.745" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+              <feFlood floodOpacity="0" result="BackgroundImageFix"/>
               <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
               <feGaussianBlur stdDeviation="120" result="effect1_foregroundBlur_239_629"/>
               </filter>
@@ -60,15 +60,15 @@ function Header() {
           <nav className="main-header__navigation">
             <svg className="main-header__nav-glare" width="400" height="468" viewBox="0 0 400 468" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_f_468_651)">
-              <ellipse cx="138.348" cy="134.155" rx="138.348" ry="134.155" transform="matrix(0.943883 0.33028 -0.332879 0.94297 286.314 -29)" fill="#3BCC7C" fill-opacity="0.4"/>
+              <ellipse cx="138.348" cy="134.155" rx="138.348" ry="134.155" transform="matrix(0.943883 0.33028 -0.332879 0.94297 286.314 -29)" fill="#3BCC7C" fillOpacity="0.4"/>
               </g>
               <path d="M343.107 129.498C337.439 164.093 314.352 179.402 281.469 176.031C248.595 172.662 206 150.62 161.485 110.675C116.969 70.7296 78.9974 20.4768 53.588 -28.4528C28.1713 -77.3965 15.3765 -124.903 21.0445 -159.498C26.7125 -194.093 49.7991 -209.402 82.6825 -206.031C115.556 -202.662 158.151 -180.62 202.666 -140.675C247.182 -100.73 285.154 -50.4768 310.563 -1.54725C335.98 47.3965 348.775 94.9033 343.107 129.498Z" stroke="white"/>
               <path d="M405.013 129.498C399.345 164.093 376.258 179.402 343.375 176.031C310.501 172.662 267.907 150.62 223.391 110.675C178.876 70.7296 140.904 20.4768 115.494 -28.4528C90.0775 -77.3965 77.2828 -124.903 82.9507 -159.498C88.6187 -194.093 111.705 -209.402 144.589 -206.031C177.463 -202.662 220.057 -180.62 264.572 -140.675C309.088 -100.73 347.06 -50.4768 372.469 -1.54725C397.886 47.3965 410.681 94.9033 405.013 129.498Z" stroke="white"/>
               <path d="M459.339 129.498C453.671 164.093 430.584 179.402 397.701 176.031C364.827 172.662 322.233 150.62 277.717 110.675C233.202 70.7296 195.23 20.4768 169.82 -28.4528C144.404 -77.3965 131.609 -124.903 137.277 -159.498C142.945 -194.093 166.031 -209.402 198.915 -206.031C231.789 -202.662 274.383 -180.62 318.898 -140.675C363.414 -100.73 401.386 -50.4768 426.795 -1.54725C452.212 47.3965 465.007 94.9033 459.339 129.498Z" stroke="white"/>
               <path d="M513.665 129.498C507.997 164.093 484.911 179.402 452.027 176.031C419.153 172.662 376.559 150.62 332.044 110.675C287.528 70.7296 249.556 20.4768 224.147 -28.4528C198.73 -77.3965 185.935 -124.903 191.603 -159.498C197.271 -194.093 220.358 -209.402 253.241 -206.031C286.115 -202.662 328.709 -180.62 373.225 -140.675C417.74 -100.73 455.712 -50.4768 481.122 -1.54725C506.538 47.3965 519.333 94.9033 513.665 129.498Z" stroke="white"/>
               <defs>
-              <filter id="filter0_f_468_651" x="44.1953" y="-181.343" width="656.092" height="649.081" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <filter id="filter0_f_468_651" x="44.1953" y="-181.343" width="656.092" height="649.081" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+              <feFlood floodOpacity="0" result="BackgroundImageFix"/>
               <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
               <feGaussianBlur stdDeviation="95" result="effect1_foregroundBlur_468_651"/>
               </filter>
@@ -76,11 +76,11 @@ function Header() {
             </svg>
             <svg className="main-header__nav-glare main-header__nav-glare--2" width="314" height="689" viewBox="0 0 314 689" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_f_468_640)">
-              <ellipse cx="-25.1638" cy="344.85" rx="193.303" ry="92.2585" transform="rotate(-46.6096 -25.1638 344.85)" fill="#3BCC7C" fill-opacity="0.4"/>
+              <ellipse cx="-25.1638" cy="344.85" rx="193.303" ry="92.2585" transform="rotate(-46.6096 -25.1638 344.85)" fill="#3BCC7C" fillOpacity="0.4"/>
               </g>
               <defs>
-              <filter id="filter0_f_468_640" x="-363.953" y="0.705078" width="677.578" height="688.29" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <filter id="filter0_f_468_640" x="-363.953" y="0.705078" width="677.578" height="688.29" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+              <feFlood floodOpacity="0" result="BackgroundImageFix"/>
               <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
               <feGaussianBlur stdDeviation="95" result="effect1_foregroundBlur_468_640"/>
               </filter>
