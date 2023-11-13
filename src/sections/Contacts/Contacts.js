@@ -16,7 +16,6 @@ function Contacts() {
             <filter id="filter0_f_468_967" x="0.402344" y="-93.1357" width="238.758" height="339.721" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
             <feFlood floodOpacity="0" result="BackgroundImageFix"/>
             <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-            <feGaussianBlur stdDeviation="40" result="effect1_foregroundBlur_468_967"/>
             </filter>
             </defs>
           </svg>
@@ -30,7 +29,6 @@ function Contacts() {
             <filter id="filter0_f_907_1700" x="0.382812" y="-18.7803" width="883.367" height="815.438" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
             <feFlood floodOpacity="0" result="BackgroundImageFix"/>
             <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-            <feGaussianBlur stdDeviation="120" result="effect1_foregroundBlur_907_1700"/>
             </filter>
             </defs>
           </svg>
@@ -42,7 +40,6 @@ function Contacts() {
             <filter id="filter0_f_907_1699" x="-612.291" y="-489.226" width="1117.19" height="1364.28" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
             <feFlood floodOpacity="0" result="BackgroundImageFix"/>
             <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-            <feGaussianBlur stdDeviation="120" result="effect1_foregroundBlur_907_1699"/>
             </filter>
             </defs>
           </svg>

@@ -24,6 +24,8 @@
 
 .main-header__glare {
   display: none;
+
+  filter: blur(80px);
 }
 
 .main-header__navigation {
@@ -31,6 +33,16 @@
 
   .main-header__nav-glare {
     display: none;
+    
+    &--1 {
+      g {
+        filter: blur(80px);
+      }
+    }
+
+    &--2 {
+      filter: blur(80px);
+    }
   }
 
   @media (max-width: 940px) {

@@ -19,7 +19,6 @@ function WorkTogether() {
             <filter id="filter0_f_447_528" x="0.953125" y="0.0537109" width="619.375" height="588.387" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
             <feFlood floodOpacity="0" result="BackgroundImageFix"/>
             <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-            <feGaussianBlur stdDeviation="95" result="effect1_foregroundBlur_447_528"/>
             </filter>
             </defs>
           </svg>

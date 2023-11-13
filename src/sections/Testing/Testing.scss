@@ -19,6 +19,16 @@
   position: absolute;
   right: 0;
   top:0;
+
+  g {
+    filter: blur(80px);
+  }
+}
+
+.testing__glare--320 {
+  g {
+    filter: blur(45px);
+  }
 }
 
 .testing__glare--740,

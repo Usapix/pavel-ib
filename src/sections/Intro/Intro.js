@@ -16,7 +16,6 @@ function Intro() {
             <filter id="filter0_f_468_571" x="0.0957031" y="0.0244141" width="319.105" height="311.036" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
             <feFlood floodOpacity="0" result="BackgroundImageFix"/>
             <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-            <feGaussianBlur stdDeviation="40" result="effect1_foregroundBlur_468_571"/>
             </filter>
             </defs>
           </svg>

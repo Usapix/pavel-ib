@@ -9,19 +9,39 @@
   right: -100px;
   top: 20px;
 
+  filter: blur(40px);
+
   pointer-events: none;
+
+  @media (min-width: 744px) {
+    filter: blur(50px);
+
+    transform: scale(1.5);
+  }
 }
 
 .questions__glare-1024 {
   display: none;
+
+  g {
+    filter: blur(80px);
+  }
 }
 
 .questions__glare-1440 {
   display: none;
+
+  g {
+    filter: blur(80px);
+  }
 }
 
 .questions__glare-1920 {
   display: none;
+
+  g {
+    filter: blur(80px);
+  }
 }
 
 .questions__list {

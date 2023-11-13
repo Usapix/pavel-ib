@@ -16,7 +16,6 @@ function Questions() {
           <filter id="filter0_f_468_959" x="0.730469" y="0.492188" width="219.566" height="253.578" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
           <feFlood floodOpacity="0" result="BackgroundImageFix"/>
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-          <feGaussianBlur stdDeviation="40" result="effect1_foregroundBlur_468_959"/>
           </filter>
           </defs>
         </svg>
@@ -37,7 +36,6 @@ function Questions() {
           <filter id="filter0_f_907_1669" x="0" y="0" width="804" height="610" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
           <feFlood floodOpacity="0" result="BackgroundImageFix"/>
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-          <feGaussianBlur stdDeviation="120" result="effect1_foregroundBlur_907_1669"/>
           </filter>
           </defs>
         </svg>
@@ -62,7 +60,6 @@ function Questions() {
           <filter id="filter0_f_250_573" x="0" y="0" width="1024" height="698" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
           <feFlood floodOpacity="0" result="BackgroundImageFix"/>
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-          <feGaussianBlur stdDeviation="120" result="effect1_foregroundBlur_250_573"/>
           </filter>
           </defs>
         </svg>
@@ -89,7 +86,6 @@ function Questions() {
           <filter id="filter0_f_369_489" x="0.826172" y="0" width="1210" height="725" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
           <feFlood floodOpacity="0" result="BackgroundImageFix"/>
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-          <feGaussianBlur stdDeviation="120" result="effect1_foregroundBlur_369_489"/>
           </filter>
           </defs>
         </svg>

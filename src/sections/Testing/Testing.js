@@ -18,7 +18,6 @@ function Testing() {
             <filter id="filter0_f_468_679" x="0.349609" y="-99.8408" width="276.102" height="293.475" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
             <feFlood floodOpacity="0" result="BackgroundImageFix"/>
             <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-            <feGaussianBlur stdDeviation="40" result="effect1_foregroundBlur_468_679"/>
             </filter>
             </defs>
           </svg>
@@ -32,7 +31,6 @@ function Testing() {
             <filter id="filter0_f_445_1355" x="0.0566406" y="-211.77" width="521.775" height="780.622" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
             <feFlood floodOpacity="0" result="BackgroundImageFix"/>
             <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-            <feGaussianBlur stdDeviation="95" result="effect1_foregroundBlur_445_1355"/>
             </filter>
             </defs>
           </svg>
@@ -46,7 +44,6 @@ function Testing() {
             <filter id="filter0_f_244_535" x="0.625" y="-252.018" width="729.197" height="714.013" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
             <feFlood floodOpacity="0" result="BackgroundImageFix"/>
             <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-            <feGaussianBlur stdDeviation="120" result="effect1_foregroundBlur_244_535"/>
             </filter>
             </defs>
           </svg>
