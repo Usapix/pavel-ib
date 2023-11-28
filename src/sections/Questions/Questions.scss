@@ -47,9 +47,9 @@
 .questions__list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
   padding: 0;
   margin-top: 40px;
+  gap: 10px;
 
   list-style: none;
 }
@@ -132,10 +132,6 @@
     display: block;
 
     pointer-events: none;
-  }
-
-  .questions__list {
-    gap: 30px;
   }
 
   .expander__button.questions__item-expander {
