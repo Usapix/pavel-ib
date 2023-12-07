@@ -32,10 +32,10 @@ function Footer() {
             </div>
             <ul className="main-footer__creators-list">
               <li className="main-footer__creators-item">
-                <a href="" className="main-footer__creators-link">Разработчик — Александр Шпанов</a>
+                <a href="https://whittun.github.io/rsschool-cv/" className="main-footer__creators-link">Разработчик — Александр Шпанов</a>
               </li>
               <li className="main-footer__creators-item">
-                <a href="" className="main-footer__creators-link">Дизайнер — Анастасия Гудечек</a>
+                <a href="https://www.behance.net/57de399e" className="main-footer__creators-link">Дизайнер — Анастасия Гудечек</a>
               </li>
             </ul>
           </div>

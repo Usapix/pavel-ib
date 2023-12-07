@@ -88,6 +88,10 @@
     display: inline;
   }
 
+  .how-help__tool {
+    pointer-events: none;
+  }
+
   .how-help__tools-wrapper {
     align-items: flex-end;
   }

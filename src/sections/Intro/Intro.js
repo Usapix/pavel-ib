@@ -27,10 +27,10 @@ function Intro() {
             </p>
             <ul className="intro__links-list">
               <li className="intro__link-item">
-                <a href="index.html" className="intro__alt-button alt-button" onClick={(e) => {e.preventDefault(); alert('Скажешь тогда ссылку)')}}>E-mail</a>
+                <a href="index.html" className="intro__alt-button alt-button">E-mail</a>
               </li>
               <li className="intro__link-item">
-                <a href="index.html" className="intro__alt-button alt-button" onClick={(e) => {e.preventDefault(); alert('Ну и тут согласуем что пихать, можно ссылку на pornhub?')}}>Telegram</a>
+                <a href="https://t.me/Lb01C3" className="intro__alt-button alt-button">Telegram</a>
               </li>
             </ul>
           </div>

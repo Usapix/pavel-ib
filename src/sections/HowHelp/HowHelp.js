@@ -12,9 +12,9 @@ function HowHelp() {
             <p className="how-help__tools-text">
               Использую<span> в работе</span>:
             </p>
-            <a className="how-help__tool alt-button" href="index.html" onClick={(e) => {e.preventDefault(); alert('будем пихать сюда что-нибудь? или оставим как декор?')}}>Белый ящик</a>
-            <a className="how-help__tool alt-button" href="index.html" onClick={(e) => {e.preventDefault(); alert('будем пихать сюда что-нибудь? или оставим как декор?')}}>Черный ящик</a>
-            <a className="how-help__tool alt-button" href="index.html" onClick={(e) => {e.preventDefault(); alert('будем пихать сюда что-нибудь? или оставим как декор?')}}>Серый ящик</a>
+            <a className="how-help__tool alt-button">Белый ящик</a>
+            <a className="how-help__tool alt-button">Черный ящик</a>
+            <a className="how-help__tool alt-button">Серый ящик</a>
           </div>
         </div>
         <ul className="how-help__list description-card-list">

@@ -18,7 +18,7 @@ function Feedback() {
               </p>
             </div>
             <div className="feedback-form__button-wrapper">
-              <button className="feedback-form__button button" type="submit" onClick={(e) => {e.preventDefault(); alert('Как раз для этого нужен сервак, и настройка почты :)')}}>Давайте</button>
+              <button className="feedback-form__button button" type="submit">Давайте</button>
               <p className="feedback-form__consent">
                 Нажимая на кнопку, вы даёте согласие на обработку персональных данных
               </p>

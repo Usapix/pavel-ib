@@ -39,20 +39,23 @@ function About() {
                   <div className="expander__content-wrapper">
                     <p className="expander__text">
                       Пишу статьи на таких платформах как&nbsp;
-                      <a className="expander__link" href="#">Habr</a>
+                      <a className="expander__link" href="https://habr.com/ru/users/Pulsera/">Habr</a>
                       &nbsp;и&nbsp;
-                      <a className="expander__link" href="#">Medium</a>
+                      <a className="expander__link" href="https://medium.com/@Pavel.Step">Medium</a>
                       . Мои последние статьи:
                     </p>
                     <ul className="expander__list">
                       <li className="expander__item">
-                        <a className="expander__alt-link" href="#">История о том, как я обошел защиту в компьютерном клубе Arena Arsenal</a>
+                        <a className="expander__alt-link" href="https://habr.com/ru/articles/534514/">История о том, как я обошел защиту в компьютерном клубе Arena Arsenal</a>
                       </li>
                       <li className="expander__item">
-                        <a className="expander__alt-link" href="#"> История о том, к чему приводит случайное раскрытие ссылки и не только</a>
+                        <a className="expander__alt-link" href="https://habr.com/ru/articles/522608/"> История о том, к чему приводит случайное раскрытие ссылки и не только</a>
                       </li>
                       <li className="expander__item">
-                        <a className="expander__alt-link" href="#"> Анализ безопасности роутера Smart box</a>
+                        <a className="expander__alt-link" href="https://habr.com/ru/articles/510606/"> Анализ безопасности роутера Smart box</a>
+                      </li>
+                      <li className="expander__item">
+                        <a className="expander__alt-link" href="https://habr.com/ru/articles/743632/">История о том, как я шеринги ломал</a>
                       </li>
                     </ul>
                   </div>
@@ -69,7 +72,7 @@ function About() {
                     <svg className="expander__content-svg" xmlns="http://www.w3.org/2000/svg" width="33" height="27" viewBox="0 0 33 27" fill="none">
                       <path d="M9.4514 15.4313L2 12.9539L32 1L26.2333 26L17.486 19.8062M9.4514 15.4313L12.9503 24.9078M9.4514 15.4313L27.1404 5.61165L14.8294 17.9252M12.9503 24.9078L14.8294 17.9252M12.9503 24.9078L17.486 19.8062M14.8294 17.9252L17.486 19.8062" stroke="#646464"/>
                     </svg> 
-                    <a href="#" className="expander__link">
+                    <a href="https://t.me/Ent_TranslateIB" className="expander__link">
                       Перевод энтузиаста | Информационная безопасность
                     </a>
                   </div>
