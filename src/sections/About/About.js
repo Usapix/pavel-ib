@@ -46,16 +46,16 @@ function About() {
                     </p>
                     <ul className="expander__list">
                       <li className="expander__item">
-                        <a className="expander__alt-link" href="https://habr.com/ru/articles/534514/">История о том, как я обошел защиту в компьютерном клубе Arena Arsenal</a>
+                        <a className="expander__link" href="https://habr.com/ru/articles/743632/">История о том, как я шеринги ломал</a>
                       </li>
                       <li className="expander__item">
-                        <a className="expander__alt-link" href="https://habr.com/ru/articles/522608/"> История о том, к чему приводит случайное раскрытие ссылки и не только</a>
+                        <a className="expander__link" href="https://habr.com/ru/articles/534514/">История о том, как я обошел защиту в компьютерном клубе Arena Arsenal</a>
                       </li>
                       <li className="expander__item">
-                        <a className="expander__alt-link" href="https://habr.com/ru/articles/510606/"> Анализ безопасности роутера Smart box</a>
+                        <a className="expander__link" href="https://habr.com/ru/articles/522608/"> История о том, к чему приводит случайное раскрытие ссылки и не только</a>
                       </li>
                       <li className="expander__item">
-                        <a className="expander__alt-link" href="https://habr.com/ru/articles/743632/">История о том, как я шеринги ломал</a>
+                        <a className="expander__link" href="https://habr.com/ru/articles/510606/"> Анализ безопасности роутера Smart box</a>
                       </li>
                     </ul>
                   </div>
