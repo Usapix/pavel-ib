@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 Not Found</title>
+<style>
+  body {
+    min-width: 340px;
+    background-color: black;
+    margin: 0;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .terminal {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    min-height: 400px;
+    background-color: #000000;
+    border: 2px solid #333333;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .terminal:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
+    pointer-events: none;
+  }
+  .terminal-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 25px;
+    background-color: #333333;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+  }
+  .terminal-header h1 {
+    color: #FFFFFF;
+    margin: 0;
+    font-size: 14px;
+  }
+  .terminal-header span {
+    color: #888888;
+    margin: 0;
+    font-size: 12px;
+  }
+  .terminal-body {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .terminal-body pre {
+    color: #BFBFBF;
+    margin: 0;
+    font-size: 14px;
+    white-space: pre-wrap;
+  }
+  .animation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #00FF00;
+    border-radius: 50%;
+    animation: metasploit-animation 2s ease-in-out infinite;
+  }
+  @keyframes metasploit-animation {
+    0% {
+      transform: translateX(-50%) rotate(0deg);
+      box-shadow: 0 0 3px #00FF00;
+    }
+    50% {
+      transform: translateX(-50%) rotate(180deg);
+      box-shadow: 0 0 10px #00FF00;
+    }
+    100% {
+      transform: translateX(-50%) rotate(360deg);
+      box-shadow: 0 0 3px #00FF00;
+    }
+  }
+  @media (max-width: 500px) {
+    .terminal-body pre {
+      color: #BFBFBF;
+      margin: 0;
+      font-size: 12px;
+      white-space: pre-wrap;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="terminal">
+  <div class="terminal-header">
+    <h1>404 Not Found</h1>
+    <span>Server</span>
+  </div>
+  <div class="terminal-body">
+    <pre>
+     _____              _            ___ 
+    |  ___|   _ _______(_)_ __   __ |__ \
+    | |_ | | | |_  /_  / | '_ \ / _` |/ /
+    |  _|| |_| |/ / / /| | | | | (_| |_| 
+    |_|   \__,_/___/___|_|_| |_|\__, (_) 
+                                |___/    
+    </pre>
+    <pre>
+    Ресурс не найден:(
+    </pre>
+  </div>
+  <div class="animation"></div>
+</div>
+</body>
+</html>
