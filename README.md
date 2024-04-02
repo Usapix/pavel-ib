@@ -7,6 +7,11 @@
 git clone git@github.com:Usapix/pavel-ib.git
 ```
 
+## Скачайте ветку
+```
+git pull origin Имя_ветки
+```
+
 ## Выбор правильной ветки 
 Выберите ветку, в которой разрабатываете приложение:
 ![image](https://github.com/Usapix/pavel-ib/assets/53493411/9d3acbfa-6c42-4392-b703-395416f57c20)
