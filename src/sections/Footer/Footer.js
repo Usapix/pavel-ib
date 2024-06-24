@@ -24,7 +24,7 @@ function Footer() {
           <div className="main-footer__content-wrapper">
             <div className="main-footer__privacy-copy-wrapper">
               <p className="main-footer__copy">
-                ©2023. Pavel|IB — все права защищены
+                ©2024. Pavel|IB — все права защищены
               </p>
               <p className="main-footer__privacy-policy">
                 <a className="main-footer__privacy-link" href="">Политика конфиденциальности</a>

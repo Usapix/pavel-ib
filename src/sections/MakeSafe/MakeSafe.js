@@ -20,8 +20,9 @@ function MakeSafe() {
                 <p className="main-input">
                   <input
                     className="make-safe__input main-input__element"
+					name="name"
                     type="text"
-                    placeholder="Ваше имя*"
+                    placeholder="Ваше имя*" required
                   />
                 </p>
               </div>
@@ -30,6 +31,7 @@ function MakeSafe() {
                 <p className="main-input">
                   <input
                     className="make-safe__input main-input__element"
+					name="org"
                     type="text"
                     placeholder="Укажите наименование"
                   />
@@ -40,8 +42,9 @@ function MakeSafe() {
                 <p className="main-input">
                   <input
                     className="make-safe__input main-input__element"
+					name="email"
                     type="text"
-                    placeholder="Ваша почта*"
+                    placeholder="Ваша почта*" required
                   />
                 </p>
               </div>

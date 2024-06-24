@@ -25,7 +25,7 @@ function About() {
                 text={
                   <div className="expander__content-wrapper">
                     <p className="expander__text">
-                      Выступал спикером на международном форуме Positive Hack Days в 2021 году на тему “Безопасность роутера: важно ли это?”
+                      Выступал спикером на международном форуме Positive Hack Days в 2021 году на тему <a className="expander__link" href="https://youtu.be/HL73yOW7YWU" target="_blank">«Безопасность роутера: важно ли это?»</a> и в Нижнем Новгороде на DEFCON по теме <a className="expander__link" href="https://youtu.be/PtMCM7zCwhw" target="_blank">«Уязвимые API: Приемы и эксплуатация»</a> в 2024 году.
                     </p>
                   </div>
                 }
@@ -69,12 +69,9 @@ function About() {
                 text={
                 <div className="expander__content-wrapper">
                   <div className="expander__link-wrapper">
-                    <svg className="expander__content-svg" xmlns="http://www.w3.org/2000/svg" width="33" height="27" viewBox="0 0 33 27" fill="none">
-                      <path d="M9.4514 15.4313L2 12.9539L32 1L26.2333 26L17.486 19.8062M9.4514 15.4313L12.9503 24.9078M9.4514 15.4313L27.1404 5.61165L14.8294 17.9252M12.9503 24.9078L14.8294 17.9252M12.9503 24.9078L17.486 19.8062M14.8294 17.9252L17.486 19.8062" stroke="#646464"/>
-                    </svg> 
-                    <a href="https://t.me/Ent_TranslateIB" className="expander__link">
-                      Перевод энтузиаста | Информационная безопасность
-                    </a>
+				  <p className="expander__text">
+				  В 2022 году начал вести свой <a className="expander__link" href="https://t.me/Ent_TranslateIB" target="_blank">телеграм канал</a> по переводу статей и книг. Канал попадал в список лауреатов премии <a className="expander__link" href="https://securitymedia.org/premia/" target="_blank">«Киберпросвет»</a> от Cybermedia в 2024 году. За существование канала было переведено 300+ статей и 5 книг: «Полное руководство по Burp Suite», «Охота за ошибками для веб-безопасности», «Bug Bounty автоматизация с помощью Python. Секреты охоты за уязвимостями», «100 инструментов для SOC-аналитиков» и «Взлом API: Взлом программных интерфейсов веб-приложений».
+				  </p>
                   </div>
                 </div>
               }/>

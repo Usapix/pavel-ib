@@ -23,14 +23,14 @@ function Intro() {
         <div className="intro__content">
           <div className="intro__links-wrapper">
             <p className="intro__text">
-              Мои социальные сети:
+              Мои контакты:
             </p>
             <ul className="intro__links-list">
               <li className="intro__link-item">
-                <a href="index.html" className="intro__alt-button alt-button">E-mail</a>
+                <a href="mailto:pavel@pavel-ib.ru" className="intro__alt-button alt-button">E-mail</a>
               </li>
               <li className="intro__link-item">
-                <a href="https://t.me/Lb01C3" className="intro__alt-button alt-button">Telegram</a>
+                <a href="https://t.me/pavel_Ib" target="_blank" className="intro__alt-button alt-button">Telegram</a>
               </li>
             </ul>
           </div>
