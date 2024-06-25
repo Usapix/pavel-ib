@@ -15,8 +15,8 @@
 .main-header__content-wrapper {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 7px;  
-  
+  padding-bottom: 7px;
+
   border-bottom: 1px solid $light-main-text;
 
   overflow: visible;
@@ -29,11 +29,9 @@
 }
 
 .main-header__navigation {
-  display: none;
-
   .main-header__nav-glare {
     display: none;
-    
+
     &--1 {
       g {
         filter: blur(80px);
@@ -46,73 +44,75 @@
   }
 
   @media (max-width: 940px) {
-    &--opened {
-      position: fixed;
-      left: 0;
-      top: 0;
-      z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 1;
 
-      overflow: scroll;
+    display: block;
+    width: 100vw;
+    min-width: 320px;
+    height: 100vh;
+
+    text-decoration: none;
+
+    transition: left 0.4s;
+    overflow: scroll;
+    background-color: $light-main-background;
+
+    .main-header__navigation-list {
+      display: flex;
+      flex-direction: column;
+      gap: 70px;
+      padding: 0 90px;
+      margin: 0 auto;
+      margin-top: 170px;
+
+      list-style: none;
+
+      @media (min-width: 600px) {
+        width: 350px;
+        margin-top: 150px;
+        padding: 0 40px;
+      }
+    }
+
+    .main-header__navigation-link {
+      position: relative;
+      z-index: 2;
+
+      font-size: 40px;
+      text-decoration: none;
+      line-height: 130%;
+      color: $light-title-color;
+
+      @media (min-width: 450px) {
+        font-size: 40px;
+      }
+
+      @media (min-width: 740px) {
+        font-size: 50px;
+      }
+    }
+
+    .main-header__nav-glare {
+      position: absolute;
+
+      right: 0;
+      top: 0;
 
       display: block;
-      width: 100vw;  
-      min-width: 320px;
-      height: 100vh;
 
-      text-decoration: none;
-
-      background-color: $light-main-background;
-
-      .main-header__navigation-list {
-        display: flex;
-        flex-direction: column;
-        gap: 70px;
-        padding: 0 90px;
-        margin: 0 auto;
-        margin-top: 170px;
-
-        list-style: none;
-        
-        @media (min-width: 600px) {
-          width: 350px;
-          margin-top: 150px;
-          padding: 0 40px;
-        }
+      &--2 {
+        left: 0;
+        right: auto;
+        top: auto;
+        bottom: -220px;
       }
+    }
 
-      .main-header__navigation-link {
-        position: relative;
-        z-index: 2;
-
-        font-size: 40px;
-        text-decoration: none;
-        line-height: 130%;
-        color: $light-title-color;
-
-        @media (min-width: 450px) {
-          font-size: 40px;
-        }
-
-        @media (min-width: 740px) {
-          font-size: 50px;
-        }
-      }
-
-      .main-header__nav-glare {
-        position: absolute;
-
-        right: 0;
-        top: 0;
-
-        display: block;
-
-        &--2 {
-          left: 0;
-          right: auto;
-          top: auto;
-          bottom: -220px;
-        }
-      }
+    &--opened {
+      left: 0;
     }
   }
 }
@@ -140,7 +140,7 @@
   span {
     display: block;
     width: 100%;
-    height: 4px;  
+    height: 4px;
 
     border-radius: 2px;
     background-color: $light-main-text;
@@ -148,7 +148,7 @@
     transition: transform 0.3s;
   }
 
-  &--opened { 
+  &--opened {
     position: fixed;
     top: 20px;
     right: 20px;
@@ -157,7 +157,7 @@
       top: 39px;
       right: 50px;
     }
-    
+
     span {
       position: absolute;
       top: 14px;
@@ -207,7 +207,7 @@
     width: 163px;
     height: 35px;
   }
-  
+
   .main-header__navigation-list {
     display: flex;
     gap: 15px;
@@ -234,21 +234,21 @@
     transition: outline 0.3s;
 
     &::before {
-      content: '';
-  
+      content: "";
+
       position: absolute;
       bottom: 0;
       left: 0;
-  
+
       display: block;
       height: 1px;
       width: 0%;
-  
+
       background-color: $light-dull-text;
-  
-      transition: width .2s;
+
+      transition: width 0.2s;
     }
-  
+
     @media (hover: hover) {
       &:hover {
         &::before {
@@ -256,7 +256,6 @@
         }
       }
     }
-    
   }
 
   .main-header__burger {
@@ -280,7 +279,7 @@
     left: 55px;
 
     display: block;
-  
+
     pointer-events: none;
   }
 
@@ -294,7 +293,7 @@
   .main-header__glare {
     left: 10%;
   }
-  
+
   .main-header__navigation-list {
     gap: 20px;
   }
