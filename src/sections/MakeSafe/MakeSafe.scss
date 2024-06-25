@@ -51,7 +51,7 @@
 }
 
 .make-safe__textarea:focus {
-  outline:none;
+  outline: none;
 }
 
 .make-safe__textarea::placeholder {
@@ -156,7 +156,8 @@
     margin-top: 50px;
   }
 
-  .main-input__element::placeholder, .main-input__element {
+  .main-input__element::placeholder,
+  .main-input__element {
     padding-left: 0;
 
     font-size: 20px;
@@ -195,7 +196,7 @@
   .make-safe__submit-wrapper {
     flex-basis: 32.5%;
     flex-direction: column;
-    justify-content: flex-end
+    justify-content: flex-end;
   }
 
   .make-safe__submit-wrapper > * {
@@ -253,6 +254,7 @@
 
   .make-safe__title .break-line {
     display: inline;
+    margin-left: 0.5em;
   }
 
   .make-safe__main-wrapper {
@@ -336,7 +338,7 @@
     font-size: 34px;
   }
 
-  .input__element::placeholder, 
+  .input__element::placeholder,
   .main-input__element {
     font-size: 24px;
   }
