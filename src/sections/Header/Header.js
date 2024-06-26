@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 
 function toggleMenu() {
   const button = document.querySelector(".main-header__burger");
@@ -20,9 +20,47 @@ function toggleMenu() {
   });
 }
 
+let prevScrollPos = window.scrollY;
+
+function handleScroll(headerRef) {
+  const headerHTML = headerRef.current;
+
+  if (!headerHTML) return;
+
+  const headerHeight = headerHTML.offsetHeight;
+
+  const currentScrollPos = window.scrollY;
+
+  if (prevScrollPos > currentScrollPos) {
+    headerHTML.classList.add("show");
+  } else {
+    headerHTML.classList.remove("show");
+  }
+
+  prevScrollPos = currentScrollPos;
+
+  if (currentScrollPos > headerHeight) {
+    document.body.style.paddingTop = `${headerHeight}px`;
+    headerHTML.classList.add("fixed");
+  } else {
+    document.body.style.paddingTop = 0;
+    headerHTML.classList.remove("fixed");
+  }
+}
+
 function Header() {
+  const headerRef = useRef(null);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => handleScroll(headerRef));
+
+    return () => {
+      window.removeEventListener("scroll", () => handleScroll(headerRef));
+    };
+  }, []);
+
   return (
-    <header className="main-header">
+    <header className="main-header" ref={headerRef}>
       <div className="container">
         <div className="main-header__content-wrapper">
           <div className="main-header__logo">

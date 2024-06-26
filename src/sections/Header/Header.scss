@@ -1,5 +1,30 @@
 .main-header {
   padding-top: 20px;
+
+  overflow: hidden;
+
+  &.fixed {
+    position: fixed;
+    left: 0;
+    top: -17%;
+    z-index: 5;
+
+    width: 100%;
+    padding-bottom: 5px;
+
+    background-color: #e7e7e7;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+
+    transition: top 0.4s;
+
+    .main-header__content-wrapper {
+      border-bottom: none;
+    }
+  }
+
+  &.show {
+    top: 0%;
+  }
 }
 
 .main-header__logo {
