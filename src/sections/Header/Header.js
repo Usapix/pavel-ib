@@ -24,10 +24,8 @@ let prevScrollPos = window.scrollY;
 
 function handleScroll(headerRef) {
   const headerHTML = headerRef.current;
-
-  if (!headerHTML) return;
-
   const headerHeight = headerHTML.offsetHeight;
+  const scrollTop = window.scrollY;
 
   const currentScrollPos = window.scrollY;
 
@@ -39,7 +37,7 @@ function handleScroll(headerRef) {
 
   prevScrollPos = currentScrollPos;
 
-  if (currentScrollPos > headerHeight) {
+  if (scrollTop > headerHeight) {
     document.body.style.paddingTop = `${headerHeight}px`;
     headerHTML.classList.add("fixed");
   } else {
