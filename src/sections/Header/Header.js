@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 function toggleMenu() {
   const button = document.querySelector(".main-header__burger");
@@ -24,18 +25,19 @@ let prevScrollPos = window.scrollY;
 
 function handleScroll(headerRef) {
   const headerHTML = headerRef.current;
+
+  if (!headerRef.current) return;
+
   const headerHeight = headerHTML.offsetHeight;
   const scrollTop = window.scrollY;
 
-  const currentScrollPos = window.scrollY;
-
-  if (prevScrollPos > currentScrollPos) {
+  if (prevScrollPos > scrollTop) {
     headerHTML.classList.add("show");
   } else {
     headerHTML.classList.remove("show");
   }
 
-  prevScrollPos = currentScrollPos;
+  prevScrollPos = scrollTop;
 
   if (scrollTop > headerHeight) {
     document.body.style.paddingTop = `${headerHeight}px`;
@@ -48,14 +50,7 @@ function handleScroll(headerRef) {
 
 function Header() {
   const headerRef = useRef(null);
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => handleScroll(headerRef));
-
-    return () => {
-      window.removeEventListener("scroll", () => handleScroll(headerRef));
-    };
-  }, []);
+  window.addEventListener("scroll", () => handleScroll(headerRef));
 
   return (
     <header className="main-header" ref={headerRef}>
@@ -279,6 +274,7 @@ function Header() {
               </li>
             </ul>
           </nav>
+          <ThemeToggle />
           <button className="main-header__burger" onClick={toggleMenu}>
             <span></span>
             <span></span>
