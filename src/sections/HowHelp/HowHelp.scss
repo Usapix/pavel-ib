@@ -1,3 +1,11 @@
+body {
+  &[data-theme="dark"] {
+  }
+
+  &[data-theme="light"] {
+  }
+}
+
 .how-help__tools-text {
   position: relative;
 
@@ -43,7 +51,7 @@
 
     font-size: 18px;
   }
-  
+
   .how-help__title {
     margin-bottom: 50px;
   }
@@ -133,7 +141,7 @@
 
   .how-help__wrapper {
     flex-direction: column;
-    align-items: flex-start
+    align-items: flex-start;
   }
 
   .how-help__title {
@@ -171,7 +179,7 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .how-help__tool {
     padding: 8px 16px;
   }
@@ -185,7 +193,7 @@
   .how-help__tools-wrapper {
     margin-top: 135px;
   }
-  
+
   .how-help__title {
     max-width: 335px;
 

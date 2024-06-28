@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import ThemeToggle from "./ThemeToggle";
 
 function toggleMenu() {

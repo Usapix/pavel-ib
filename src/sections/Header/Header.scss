@@ -1,3 +1,86 @@
+body {
+  &[data-theme="dark"] {
+    .main-header {
+      &.fixed {
+        background-color: $dark-main-background;
+        box-shadow: 0 0.5rem 1.5rem rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    .main-header__logo path {
+      fill: $dark-font-color;
+    }
+
+    .main-header__navigation {
+      @media (max-width: 940px) {
+        background-color: $dark-main-background;
+      }
+    }
+
+    .main-header__navigation-link {
+      color: $dark-title-color;
+
+      &::before {
+        background-color: $dark-title-color;
+      }
+    }
+
+    .main-header__content-wrapper {
+      border-bottom: 1px solid $dark-title-color;
+    }
+
+    .main-header__burger {
+      span {
+        background-color: $dark-font-color;
+      }
+    }
+
+    .theme-toggle-label {
+      background-color: $dark-switch-background;
+    }
+  }
+
+  &[data-theme="light"] {
+    .main-header {
+      &.fixed {
+        background-color: $light-main-background;
+      }
+    }
+
+    .main-header__logo path {
+      fill: $light-main-text;
+    }
+
+    .main-header__navigation {
+      @media (max-width: 940px) {
+        background-color: $light-main-background;
+      }
+    }
+
+    .main-header__navigation-link {
+      color: $light-title-color;
+
+      &::before {
+        background-color: $light-dull-text;
+      }
+    }
+
+    .main-header__content-wrapper {
+      border-bottom: 1px solid $light-main-text;
+    }
+
+    .main-header__burger {
+      span {
+        background-color: $light-main-text;
+      }
+    }
+
+    .theme-toggle-label {
+      background-color: $light-switch-background;
+    }
+  }
+}
+
 .main-header {
   padding-top: 20px;
 
@@ -12,7 +95,6 @@
     width: 100%;
     padding-bottom: 5px;
 
-    background-color: #e7e7e7;
     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
 
     transition: top 0.4s;
@@ -30,6 +112,7 @@
 .main-header__logo {
   width: 150px;
   height: 35px;
+  margin-right: auto;
 }
 
 .main-header__logo svg {
@@ -39,10 +122,7 @@
 
 .main-header__content-wrapper {
   display: flex;
-  justify-content: space-between;
   padding-bottom: 7px;
-
-  border-bottom: 1px solid $light-main-text;
 
   overflow: visible;
 }
@@ -82,7 +162,6 @@
     text-decoration: none;
 
     transition: left 0.4s;
-    background-color: $light-main-background;
 
     .main-header__navigation-list {
       display: flex;
@@ -108,7 +187,6 @@
       font-size: 40px;
       text-decoration: none;
       line-height: 130%;
-      color: $light-title-color;
 
       @media (min-width: 450px) {
         font-size: 40px;
@@ -154,6 +232,11 @@
   height: 32px;
   gap: 4px;
   padding: 0;
+  margin-left: 20px;
+
+  @media (min-width: 500px) {
+    margin-left: 40px;
+  }
 
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
@@ -167,7 +250,6 @@
     height: 4px;
 
     border-radius: 2px;
-    background-color: $light-main-text;
 
     transition: transform 0.3s;
   }
@@ -347,5 +429,78 @@
 
   .main-header__glare svg {
     width: 100%;
+  }
+}
+
+.theme-toggle {
+  position: relative;
+  width: 80px;
+  height: 30px;
+
+  @media (min-width: 600px) {
+    margin-left: 20px;
+  }
+
+  @media (min-width: 1400px) {
+    margin-left: 40px;
+  }
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.theme-toggle-checkbox {
+  display: none;
+}
+
+.theme-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.theme-toggle-ball {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 24px;
+
+  background-color: #fff;
+  border-radius: 58px;
+  transition: transform 0.3s, background-color 0.3s;
+
+  svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .dark {
+    display: none;
+  }
+}
+
+.theme-toggle-checkbox:checked + .theme-toggle-label {
+  background-color: $dark-switch-background;
+}
+
+.theme-toggle-checkbox:checked + .theme-toggle-label .theme-toggle-ball {
+  background-color: $dark-content-background;
+  transform: translateX(33px);
+
+  .dark {
+    display: block;
+  }
+
+  .light {
+    display: none;
   }
 }

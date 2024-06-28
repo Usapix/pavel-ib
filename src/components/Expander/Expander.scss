@@ -1,4 +1,39 @@
-$root: '.expander';
+$root: ".expander";
+
+body {
+  &[data-theme="dark"] {
+    .expander__button {
+      color: $dark-title-color;
+
+      border-bottom: 1px solid $dark-title-color;
+    }
+
+    .expander__svg path {
+      stroke: $dark-title-color;
+    }
+
+    .expander__link {
+      color: $dark-title-color;
+    }
+  }
+
+  &[data-theme="light"] {
+    .expander__button {
+      color: $light-title-color;
+
+      border-bottom: 1px solid $light-main-text;
+    }
+
+    .expander__svg path {
+      stroke: $light-title-color;
+    }
+
+    .expander__link {
+      color: $light-main-text;
+    }
+  }
+}
+
 .expander {
   overflow: hidden;
 
@@ -7,7 +42,7 @@ $root: '.expander';
       #{$root}__svg--opened {
         display: block;
       }
-    
+
       #{$root}__svg--closed {
         display: none;
       }
@@ -27,16 +62,14 @@ $root: '.expander';
   font-family: "Anonymous Pro";
   font-size: 20px;
   line-height: 27px;
-  color: $light-title-color;
-  
+
   cursor: pointer;
   background: none;
   border: none;
-  border-bottom: 1px solid $light-main-text;
 
   & > * {
     pointer-events: none;
-  } 
+  }
 }
 
 .expander__svg {
@@ -52,7 +85,7 @@ $root: '.expander';
 .expander__content {
   height: 0px;
 
-  transition: height .3s;
+  transition: height 0.3s;
 }
 
 .expander__checkbox:checked ~ .expander__content {
@@ -93,7 +126,6 @@ $root: '.expander';
 
 .expander__link {
   font-weight: 500;
-  color: $light-main-text;
   text-decoration: underline;
 
   @media (min-width: 600px) {
@@ -115,7 +147,7 @@ $root: '.expander';
     gap: 12px;
 
     &::before {
-      content: '';
+      content: "";
 
       display: block;
       flex-shrink: 0;

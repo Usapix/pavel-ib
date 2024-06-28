@@ -1,11 +1,71 @@
+body {
+  &[data-theme="dark"] {
+    .make-safe__main-wrapper {
+      background-color: $dark-content-background;
+    }
+
+    .make-safe__textarea-wrapper {
+      border-color: $dark-font-color;
+    }
+
+    .make-safe__textarea {
+      color: $dark-font-color;
+    }
+
+    .make-safe__textarea::placeholder {
+      color: $dark-font-color;
+    }
+
+    .make-safe__textarea::-webkit-scrollbar-track {
+      background-color: $dark-switch-background;
+    }
+
+    .make-safe__textarea::-webkit-scrollbar-thumb {
+      background-color: $dark-switch-background;
+    }
+
+    .make-safe__consent {
+      color: $dark-font-color;
+    }
+  }
+
+  &[data-theme="light"] {
+    .make-safe__main-wrapper {
+      background-color: $light-content-background;
+    }
+
+    .make-safe__textarea-wrapper {
+      border-color: $light-main-text;
+    }
+
+    .make-safe__textarea {
+      color: $light-dull-text;
+    }
+
+    .make-safe__textarea::placeholder {
+      color: $light-dull-text;
+    }
+
+    .make-safe__textarea::-webkit-scrollbar-track {
+      background-color: $light-switch-background;
+    }
+
+    .make-safe__textarea::-webkit-scrollbar-thumb {
+      background-color: $light-switch-background;
+    }
+
+    .make-safe__consent {
+      color: $light-dull-text;
+    }
+  }
+}
+
 .make-safe__main-wrapper {
   padding-top: 20px;
   padding-bottom: 80px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 -20px;
-
-  background-color: $light-content-background;
 }
 
 .make-safe__title {
@@ -28,7 +88,6 @@
 
   border-width: 1px;
   border-style: solid;
-  border-color: $light-main-text;
   border-radius: 6px;
 }
 
@@ -42,7 +101,6 @@
   font-family: "Inter";
   font-size: 16px;
   text-align: left;
-  color: $light-dull-text;
 
   border: none;
   background-color: transparent;
@@ -52,10 +110,6 @@
 
 .make-safe__textarea:focus {
   outline: none;
-}
-
-.make-safe__textarea::placeholder {
-  color: $light-dull-text;
 }
 
 .make-safe__textarea::-webkit-scrollbar {
@@ -68,14 +122,12 @@
   display: block;
   position: absolute;
 
-  background-color: $light-switch-background;
   border-radius: 6px;
 
   cursor: pointer;
 }
 
 .make-safe__textarea::-webkit-scrollbar-thumb {
-  background-color: $light-switch-background;
   border-radius: 6px;
 
   cursor: pointer;

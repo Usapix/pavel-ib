@@ -1,10 +1,49 @@
+body {
+  &[data-theme="dark"] {
+    .feedback-form__wrapper {
+      background-color: $dark-content-background;
+    }
+
+    .feedback-form__input {
+      border-bottom: 1px solid $dark-font-color;
+    }
+
+    .feedback-form__input::placeholder,
+    .feedback-form__input {
+      color: $dark-font-color;
+    }
+
+    .feedback-form__consent {
+      color: $dark-font-color;
+    }
+  }
+
+  &[data-theme="light"] {
+    .feedback-form__wrapper {
+      background-color: $light-content-background;
+    }
+
+    .feedback-form__input {
+      border-bottom: 1px solid $light-main-text;
+    }
+
+    .feedback-form__input::placeholder,
+    .feedback-form__input {
+      color: $light-dull-text;
+    }
+
+    .feedback-form__consent {
+      color: $light-dull-text;
+    }
+  }
+}
+
 .feedback-form__wrapper {
   padding: 0 20px;
   padding-top: 40px;
   padding-bottom: 35px;
   margin: 0 -20px;
 
-  background-color: $light-content-background;
   border-radius: 0 0 6px 6px;
 }
 
@@ -27,15 +66,12 @@
 
   background: none;
   border: none;
-  border-bottom: 1px solid $light-main-text;
 }
 
 .feedback-form__input::placeholder,
 .feedback-form__input {
   font-family: "Inter";
   font-size: 16px;
-
-  color: $light-dull-text;
 }
 
 .feedback-form__button {
@@ -49,7 +85,6 @@
 
   font-size: 14px;
   line-height: 21px;
-  color: $light-dull-text;
 }
 
 @media (min-width: 744px) {

@@ -1,3 +1,47 @@
+body {
+  &[data-theme="dark"] {
+    .work-together__image-320 path {
+      stroke: $dark-title-color;
+    }
+    .work-together__image-744 path {
+      stroke: $dark-title-color;
+    }
+    .work-together__growth-chart-744 path {
+      stroke: $dark-title-color;
+    }
+    .work-together__growth-chart-1024 path {
+      stroke: $dark-title-color;
+    }
+    .work-together__growth-chart-1440 path {
+      stroke: $dark-title-color;
+    }
+    .work-together__growth-chart-1600 path {
+      stroke: $dark-title-color;
+    }
+  }
+
+  &[data-theme="light"] {
+    .work-together__image-320 path {
+      stroke: $light-title-color;
+    }
+    .work-together__image-744 path {
+      stroke: $light-title-color;
+    }
+    .work-together__growth-chart-744 path {
+      stroke: $light-title-color;
+    }
+    .work-together__growth-chart-1024 path {
+      stroke: $light-title-color;
+    }
+    .work-together__growth-chart-1440 path {
+      stroke: $light-title-color;
+    }
+    .work-together__growth-chart-1600 path {
+      stroke: $light-title-color;
+    }
+  }
+}
+
 .work-together .container {
   position: relative;
 }
@@ -20,7 +64,7 @@
 
 .work-together__growth-chart-744 {
   display: none;
-} 
+}
 
 .work-together__image-744 {
   display: none;
@@ -34,7 +78,7 @@
 
 .work-together__growth-chart-1600 {
   display: none;
-} 
+}
 
 .work-together__subtitle {
   margin-top: 0;
@@ -70,7 +114,7 @@
   .work-together__growth-chart-744 {
     display: block;
     width: 31%;
-  }  
+  }
 
   .work-together__list {
     margin-top: 40px;
@@ -108,7 +152,7 @@
 @media (min-width: 1024px) {
   .work-together__growth-chart-744 {
     display: none;
-  }  
+  }
 
   .work-together__growth-chart-1024 {
     display: block;
@@ -117,7 +161,6 @@
   .work-together__image-744 {
     top: -120px;
   }
-
 
   .work-together__list {
     margin-top: 55px;
@@ -146,9 +189,9 @@
 
   .work-together__list {
     display: grid;
-    grid-template-areas: 
-    "a b b"
-    "c d e";
+    grid-template-areas:
+      "a b b"
+      "c d e";
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
@@ -178,7 +221,7 @@
   .work-together__item:nth-child(5) {
     grid-area: e;
   }
-  
+
   .work-together__item--growth {
     display: block;
     padding: 0;
@@ -190,7 +233,7 @@
     display: block;
     width: 100%;
     height: 100%;
-  } 
+  }
 
   .work-together__image-744 {
     right: -120px;
@@ -201,11 +244,11 @@
 @media (min-width: 1700px) {
   .work-together__growth-chart-1600 {
     display: block;
-  } 
+  }
 
   .work-together__growth-chart-1440 {
     display: none;
-  } 
+  }
 
   .work-together__image-744 {
     top: -50px;

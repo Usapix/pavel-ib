@@ -10,14 +10,104 @@ html {
   scroll-behavior: smooth;
 }
 
+.disable-transition {
+  transition: none !important;
+}
+
 body {
   padding: 0;
   margin: 0 auto;
   min-width: 320px;
 
-  color: $light-main-text;
+  transition: background-color 0.3s;
 
-  background-color: $light-main-background;
+  &[data-theme="dark"] {
+    color: $dark-title-color;
+
+    background-color: $dark-main-background;
+
+    .title {
+      color: $dark-title-color;
+    }
+
+    .alt-button {
+      color: $dark-title-color;
+
+      border: 1px solid $dark-title-color;
+
+      @media (hover: hover) {
+        &:hover,
+        &:focus {
+          color: $light-buttonFont-color;
+          border-color: $button-background;
+          background-color: $button-background;
+        }
+
+        &:active {
+          color: $light-buttonFont-color;
+          border-color: darken($button-background, 10%);
+          background-color: darken($button-background, 10%);
+        }
+      }
+    }
+
+    .description-card-list__item {
+      background-color: $dark-content-background;
+    }
+
+    .main-input__element {
+      border-bottom: 1px solid $dark-font-color;
+    }
+
+    .main-input__element::placeholder,
+    .main-input__element {
+      color: $dark-font-color;
+    }
+  }
+
+  &[data-theme="light"] {
+    color: $light-main-text;
+
+    background-color: $light-main-background;
+
+    .title {
+      color: $light-title-color;
+    }
+
+    .alt-button {
+      color: $light-altButton-color;
+
+      border: 1px solid $light-altButton-color;
+
+      @media (hover: hover) {
+        &:hover,
+        &:focus {
+          color: $light-buttonFont-color;
+          border-color: $button-background;
+          background-color: $button-background;
+        }
+
+        &:active {
+          color: $light-buttonFont-color;
+          border-color: darken($button-background, 10%);
+          background-color: darken($button-background, 10%);
+        }
+      }
+    }
+
+    .description-card-list__item {
+      background-color: $light-content-background;
+    }
+
+    .main-input__element {
+      border-bottom: 1px solid $light-main-text;
+    }
+
+    .main-input__element::placeholder,
+    .main-input__element {
+      color: $light-dull-text;
+    }
+  }
 }
 
 .visually-hidden {
@@ -100,34 +190,16 @@ body {
   font-size: 14px;
   text-decoration: none;
   text-align: center;
-  color: $light-altButton-color;
 
-  border: 1px solid $light-altButton-color;
   border-radius: 40px;
 
   transition: color 0.3s, border 0.3s, background-color 0.3s;
-
-  @media (hover: hover) {
-    &:hover,
-    &:focus {
-      color: $light-buttonFont-color;
-      border-color: $button-background;
-      background-color: $button-background;
-    }
-
-    &:active {
-      color: $light-buttonFont-color;
-      border-color: darken($button-background, 10%);
-      background-color: darken($button-background, 10%);
-    }
-  }
 }
 
 .title {
   font-family: "Anonymous Pro";
   font-weight: 400;
   line-height: 130%;
-  color: $light-title-color;
 }
 
 @media (min-width: 500px) {
@@ -189,7 +261,6 @@ body {
 
   line-height: 24px;
 
-  background-color: $light-content-background;
   border-radius: 6px;
 }
 
@@ -207,13 +278,10 @@ body {
 
   background: none;
   border: none;
-  border-bottom: 1px solid $light-main-text;
 }
 
 .main-input__element::placeholder,
 .main-input__element {
   font-family: "Inter";
   font-size: 16px;
-
-  color: $light-dull-text;
 }
