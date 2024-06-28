@@ -51,6 +51,140 @@ body {
   pointer-events: none;
 }
 
+@keyframes fall {
+  0% {
+    top: -500px;
+    transform: rotate(-10deg);
+  }
+
+  60% {
+    transform: rotate(-30deg);
+  }
+
+  100% {
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes fall-network {
+  0% {
+    top: -500px;
+    transform: rotate(10deg);
+  }
+
+  30% {
+    transform: rotate(20deg);
+  }
+
+  100% {
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes fall-infrastructure {
+  0% {
+    top: -500px;
+    transform: rotate(10deg);
+  }
+
+  30% {
+    transform: rotate(20deg);
+  }
+
+  100% {
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes fall-employees {
+  0% {
+    top: -500px;
+    transform: rotate(10deg);
+  }
+
+  30% {
+    transform: rotate(20deg);
+  }
+
+  100% {
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+
+.testing__animate {
+  .sites {
+    top: -500px;
+
+    animation-name: fall;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+
+    transition: 0.3s all;
+  }
+
+  .info {
+    top: -500px;
+
+    transform: rotate(-10deg);
+    animation-name: fall;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+    transition: 0.3s all;
+  }
+
+  .network {
+    top: -500px;
+    transform: rotate(10deg);
+    animation-name: fall-network;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+    transition: 0.3s all;
+  }
+
+  .infrastructure {
+    top: -500px;
+
+    transform: rotate(10deg);
+    animation-name: fall-infrastructure;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.35s;
+
+    transition: 0.3s all;
+  }
+
+  .employees {
+    top: -500px;
+
+    transform: rotate(10deg);
+    animation-name: fall-employees;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+    transition: 0.3s all;
+  }
+
+  .mobile {
+    top: -500px;
+
+    transform: rotate(10deg);
+    animation-name: fall-employees;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+
+    transition: 0.3s all;
+  }
+}
+
 .testing__list--740 {
   display: none;
 }
