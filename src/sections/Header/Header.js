@@ -39,7 +39,7 @@ function handleScroll(headerRef) {
 
   prevScrollPos = scrollTop;
 
-  if (scrollTop > headerHeight) {
+  if (scrollTop > headerHeight + 150) {
     document.body.style.paddingTop = `${headerHeight}px`;
     headerHTML.classList.add("fixed");
   } else {
