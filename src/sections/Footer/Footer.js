@@ -50,6 +50,7 @@ function Footer() {
                 <a
                   href="https://whittun.github.io/rsschool-cv/"
                   className="main-footer__creators-link"
+				  target="_blank"
                 >
                   Разработчик — Александр Шпанов
                 </a>
@@ -58,6 +59,7 @@ function Footer() {
                 <a
                   href="https://www.behance.net/57de399e"
                   className="main-footer__creators-link"
+				  target="_blank"
                 >
                   Дизайнер — Анастасия Гудечек
                 </a>

@@ -14,7 +14,7 @@ function About() {
               В 2018 году начал развиваться в сфере информационной безопасности.
             </p>
             <p className="about-me__main-text">
-              На своём пути находил множество уязвимостей, это вдохновило меня писать статьи и проводить различные исследования. Многократно принимал участие в пентестах по белому, черному и серому ящику.
+              На своём пути находил множество уязвимостей, это вдохновило меня писать статьи и проводить различные исследования. Многократно принимал участие в пентестах по белому, черному и серому ящику. Автор 3-х CVE идентификаторов - CVE-2020-12246, CVE-2021-41426 и CVE-2021-41427.
             </p>
           </div>
           <ul className="about-me__expander-list">
@@ -39,23 +39,23 @@ function About() {
                   <div className="expander__content-wrapper">
                     <p className="expander__text">
                       Пишу статьи на таких платформах как&nbsp;
-                      <a className="expander__link" href="https://habr.com/ru/users/Pulsera/">Habr</a>
+                      <a className="expander__link" href="https://habr.com/ru/users/Pulsera/" target="_blank">Habr</a>
                       &nbsp;и&nbsp;
-                      <a className="expander__link" href="https://medium.com/@Pavel.Step">Medium</a>
+                      <a className="expander__link" href="https://medium.com/@Pavel.Step" target="_blank">Medium</a>
                       . Мои последние статьи:
                     </p>
                     <ul className="expander__list">
                       <li className="expander__item">
-                        <a className="expander__link" href="https://habr.com/ru/articles/743632/">История о том, как я шеринги ломал</a>
+                        <a className="expander__link" href="https://habr.com/ru/articles/743632/" target="_blank">История о том, как я шеринги ломал</a>
                       </li>
                       <li className="expander__item">
-                        <a className="expander__link" href="https://habr.com/ru/articles/534514/">История о том, как я обошел защиту в компьютерном клубе Arena Arsenal</a>
+                        <a className="expander__link" href="https://habr.com/ru/articles/534514/" target="_blank">История о том, как я обошел защиту в компьютерном клубе Arena Arsenal</a>
                       </li>
                       <li className="expander__item">
-                        <a className="expander__link" href="https://habr.com/ru/articles/522608/"> История о том, к чему приводит случайное раскрытие ссылки и не только</a>
+                        <a className="expander__link" href="https://habr.com/ru/articles/522608/" target="_blank">История о том, к чему приводит случайное раскрытие ссылки и не только</a>
                       </li>
                       <li className="expander__item">
-                        <a className="expander__link" href="https://habr.com/ru/articles/510606/"> Анализ безопасности роутера Smart box</a>
+                        <a className="expander__link" href="https://habr.com/ru/articles/510606/" target="_blank">Анализ безопасности роутера Smart box</a>
                       </li>
                     </ul>
                   </div>
