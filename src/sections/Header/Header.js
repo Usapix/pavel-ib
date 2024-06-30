@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import ThemeToggle from "./ThemeToggle";
 import SvgIcon from "../../components/SvgIcon/SvgIcon";
 
@@ -32,6 +32,8 @@ function handleScroll(headerRef) {
   const headerHeight = headerHTML.offsetHeight;
   const scrollTop = window.scrollY;
 
+  console.log(scrollTop);
+
   if (prevScrollPos > scrollTop) {
     headerHTML.classList.add("show");
   } else {
@@ -51,7 +53,20 @@ function handleScroll(headerRef) {
 
 function Header() {
   const headerRef = useRef(null);
-  window.addEventListener("scroll", () => handleScroll(headerRef));
+
+  useEffect(() => {
+    const scrollHandler = () => {
+      if (!headerRef.current) return;
+
+      requestAnimationFrame(() => handleScroll(headerRef));
+    };
+
+    window.addEventListener("scroll", scrollHandler);
+
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
 
   return (
     <header className="main-header" ref={headerRef}>
