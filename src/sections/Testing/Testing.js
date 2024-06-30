@@ -16,6 +16,10 @@ function Testing() {
       });
     });
     observer.observe(testing.current);
+
+    return () => {
+      observer.disconnect();
+    };
   }, []);
 
   return (

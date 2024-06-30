@@ -9,23 +9,25 @@ import Questions from "./sections/Questions/Questions";
 import Contacts from "./sections/Contacts/Contacts";
 import MakeSafe from "./sections/MakeSafe/MakeSafe";
 import Footer from "./sections/Footer/Footer";
+import Preloader from "./components/Preloader/Preloader";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <Header />
       <main className="main-content">
-        <Intro/>
-        <HowHelp/>
-        <Testing/>
-        <Feedback/>
-        <About/>
-        <WorkTogether/>
-        <Questions/>
-        <Contacts/>
-        <MakeSafe/>
+        <Intro />
+        <HowHelp />
+        <Testing />
+        <Feedback />
+        <About />
+        <WorkTogether />
+        <Questions />
+        <Contacts />
+        <MakeSafe />
       </main>
-      <Footer/>
+      <Footer />
+      <Preloader />
     </div>
   );
 }
