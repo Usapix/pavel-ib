@@ -272,6 +272,14 @@ body {
 
 .main-input {
   margin: 0;
+
+  &--error {
+    color: $input-error-color;
+
+    .main-input__element {
+      border-bottom: 1px solid $input-error-color !important;
+    }
+  }
 }
 
 .main-input__element {
