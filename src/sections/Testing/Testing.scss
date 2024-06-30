@@ -67,6 +67,26 @@ body {
   }
 }
 
+@keyframes fall-mobile {
+  0% {
+    top: -500px;
+    transform: rotate(-10deg);
+  }
+
+  55% {
+    transform: rotate(-30deg);
+  }
+
+  90% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+
 @keyframes fall-network {
   0% {
     top: -500px;
@@ -120,9 +140,9 @@ body {
     top: -500px;
 
     animation-name: fall;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
-    animation-delay: 2s;
+    animation-delay: 1s;
 
     transition: 0.3s all;
   }
@@ -132,7 +152,7 @@ body {
 
     transform: rotate(-10deg);
     animation-name: fall;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
 
     transition: 0.3s all;
@@ -142,7 +162,7 @@ body {
     top: -500px;
     transform: rotate(10deg);
     animation-name: fall-network;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
 
     transition: 0.3s all;
@@ -153,9 +173,9 @@ body {
 
     transform: rotate(10deg);
     animation-name: fall-infrastructure;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
-    animation-delay: 0.35s;
+    animation-delay: 0.2s;
 
     transition: 0.3s all;
   }
@@ -165,8 +185,8 @@ body {
 
     transform: rotate(10deg);
     animation-name: fall-employees;
-    animation-duration: 2s;
-    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
 
     transition: 0.3s all;
@@ -176,9 +196,9 @@ body {
     top: -500px;
 
     transform: rotate(10deg);
-    animation-name: fall-employees;
-    animation-duration: 2s;
-    animation-delay: 1.5s;
+    animation-name: fall-mobile;
+    animation-duration: 1s;
+    animation-delay: 0.8s;
     animation-fill-mode: forwards;
 
     transition: 0.3s all;
