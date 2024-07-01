@@ -1,0 +1,297 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter";
+
+  scroll-behavior: smooth;
+}
+
+.disable-transition {
+  transition: none !important;
+}
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  min-width: 320px;
+
+  transition: background-color 0.3s;
+
+  &[data-theme="dark"] {
+    color: $dark-title-color;
+
+    background-color: $dark-main-background;
+
+    .title {
+      color: $dark-title-color;
+    }
+
+    .alt-button {
+      color: $dark-title-color;
+
+      border: 1px solid $dark-title-color;
+
+      @media (hover: hover) {
+        &:hover,
+        &:focus {
+          color: $light-buttonFont-color;
+          border-color: $button-background;
+          background-color: $button-background;
+        }
+
+        &:active {
+          color: $light-buttonFont-color;
+          border-color: darken($button-background, 10%);
+          background-color: darken($button-background, 10%);
+        }
+      }
+    }
+
+    .description-card-list__item {
+      background-color: $dark-content-background;
+    }
+
+    .main-input__element {
+      border-bottom: 1px solid $dark-font-color;
+    }
+
+    .main-input__element::placeholder,
+    .main-input__element {
+      color: $dark-font-color;
+    }
+  }
+
+  &[data-theme="light"] {
+    color: $light-main-text;
+
+    background-color: $light-main-background;
+
+    .title {
+      color: $light-title-color;
+    }
+
+    .alt-button {
+      color: $light-altButton-color;
+
+      border: 1px solid $light-altButton-color;
+
+      @media (hover: hover) {
+        &:hover,
+        &:focus {
+          color: $light-buttonFont-color;
+          border-color: $button-background;
+          background-color: $button-background;
+        }
+
+        &:active {
+          color: $light-buttonFont-color;
+          border-color: darken($button-background, 10%);
+          background-color: darken($button-background, 10%);
+        }
+      }
+    }
+
+    .description-card-list__item {
+      background-color: $light-content-background;
+    }
+
+    .main-input__element {
+      border-bottom: 1px solid $light-main-text;
+    }
+
+    .main-input__element::placeholder,
+    .main-input__element {
+      color: $light-dull-text;
+    }
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  min-width: $mobile-resolution;
+  max-width: 1690px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.section-wrap {
+  margin-top: 80px;
+}
+
+@media (min-width: 744px) {
+  .section-wrap {
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-wrap {
+    margin-top: 130px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .section-wrap {
+    margin-top: 150px;
+  }
+}
+
+.main-content {
+  overflow: hidden;
+}
+
+@media (min-width: 744px) {
+  .container {
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: 1110px) {
+  .container {
+    padding: 0 80px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    padding: 0 36px;
+  }
+}
+
+.break-line {
+  display: block;
+}
+
+.off-scroll {
+  overflow: hidden;
+}
+
+.alt-button {
+  display: block;
+  padding: 2px 10px;
+  width: max-content;
+
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+
+  border-radius: 40px;
+
+  transition: color 0.3s, border 0.3s, background-color 0.3s;
+}
+
+.title {
+  font-family: "Anonymous Pro";
+  font-weight: 400;
+  line-height: 130%;
+}
+
+@media (min-width: 500px) {
+  .title {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 650px) {
+  .title {
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 744px) {
+  .title {
+    font-size: 50px;
+  }
+}
+
+.button {
+  color: $button-textColor;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+
+  border-radius: 55px;
+  border: none;
+  background-color: $button-background;
+  cursor: pointer;
+
+  transition: color 0.3s, border 0.3s, background-color 0.3s;
+
+  @media (hover: hover) {
+    &:hover {
+      border-color: lighten($button-background, 5%);
+      background-color: lighten($button-background, 5%);
+    }
+  }
+
+  &:active {
+    color: $light-buttonFont-color;
+    border-color: darken($button-background, 10%);
+    background-color: darken($button-background, 10%);
+  }
+}
+
+.description-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.description-card-list__item {
+  min-height: 122px;
+  padding: 20px 10px 30px 10px;
+
+  line-height: 24px;
+
+  border-radius: 6px;
+
+  transition: 0.3s background-color;
+}
+
+.description-card-list__text {
+  margin: 0;
+}
+
+.main-input {
+  margin: 0;
+
+  &--error {
+    color: $input-error-color;
+
+    .main-input__element {
+      border-bottom: 1px solid $input-error-color !important;
+    }
+  }
+}
+
+.main-input__element {
+  width: 100%;
+  padding: 8px;
+
+  background: none;
+  border: none;
+}
+
+.main-input__element::placeholder,
+.main-input__element {
+  font-family: "Inter";
+  font-size: 16px;
+}

@@ -1,74 +1,21 @@
-@import "styles/variables/index.scss";
+@import "./styles/variables/index.scss";
+@import "./styles/index.scss";
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+/* Sections */
 
-html {
-  font-family: "Inter";
-}
+@import "./sections/Header/Header.scss";
+@import "./sections/Intro/Intro.scss";
+@import "./sections/HowHelp/HowHelp.scss";
+@import "./sections/Testing/Testing.scss";
+@import "./sections/Feedback/Feedback.scss";
+@import "./sections/About/About.scss";
+@import "./sections/WorkTogether/WorkTogether.scss";
+@import "./sections/Questions/Questions.scss";
+@import "./sections/Contacts/Contacts.scss";
+@import "./sections/MakeSafe/MakeSafe.scss";
+@import "./sections/Footer/Footer.scss";
 
-body {
-  padding: 0;
-  margin: 0;
+/* Components */
 
-  color: $light-main-text;
-
-  background-color: $light-main-background;
-}
-
-.container {
-  width: $mobile-resolution;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-
-.break-line {
-  display: block;
-}
-
-.description-card-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 0;
-
-  list-style: none;
-}
-
-.description-card-list__item {
-  min-height: 122px;
-  padding: 20px 10px 30px 10px;
-
-  line-height: 24px;
-
-  background-color: $light-content-background;
-  border-radius: 6px;
-}
-
-.description-card-list__text {
-  margin: 0;
-}
-
-.main-input {
-  margin: 0;
-}
-
-.main-input__element {
-  width: 100%;
-  padding: 8px;
-
-  background: none;
-  border: none;
-  border-bottom: 1px solid $light-main-text;
-}
-
-.main-input__element::placeholder,
-.main-input__element {
-  font-family: "Inter";
-  font-size: 16px;
-
-  color: $light-dull-text;
-}
+@import "./components/Expander/Expander.scss";
+@import "./components/Preloader/Preloader.scss";

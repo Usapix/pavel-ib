@@ -1,0 +1,116 @@
+.about-me__title {
+  margin-bottom: 40px;
+}
+
+.about-me__main-wrapper {
+  align-items: flex-start;
+}
+
+.about-me__main-text {
+  line-height: 24px;
+}
+
+.about-me__main-text {
+  margin-top: 24px;
+}
+
+.about-me__expander-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 10px;
+  margin-top: 28px;
+
+  list-style: none;
+}
+
+@media (min-width: 744px) {
+  .about-me__title {
+    margin-bottom: 24px;
+  }
+
+  .about-me__title .break-line {
+    display: inline;
+  }
+
+  .about-me__main-text {
+    margin-bottom: 30px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .about-me__expander-list {
+    margin-top: 31px;
+    gap: 0;
+  }
+
+  .about-me__expander.expander__button {
+    max-width: 644px;
+    padding: 14px 0;
+    padding-top: 25px;
+
+    font-size: 34px;
+  }
+
+  .about-me__expander svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-me__title .break-line {
+    display: block;
+  }
+
+  .about-me__main-wrapper {
+    display: flex;
+    gap: 60px;
+  }
+
+  .about-me__text-wrapper {
+    width: 57%;
+  }
+
+  .about-me__expander-list {
+    width: 43%;
+    margin-top: 0;
+  }
+
+  .about-me__expander {
+    margin-bottom: 18px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about-me__main-wrapper {
+    gap: 140px;
+  }
+
+  .about-me__text-wrapper {
+    width: 40%;
+  }
+
+  .about-me__expander-list {
+    width: 34%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .about-me__main-wrapper {
+    gap: 120px;
+  }
+
+  .about-me__text-wrapper {
+    width: 43%;
+  }
+
+  .about-me__expander-list {
+    width: 40%;
+  }
+
+  .about-me__main-text {
+    font-size: 22px;
+  }
+}

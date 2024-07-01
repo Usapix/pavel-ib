@@ -1,0 +1,167 @@
+$root: ".expander";
+
+body {
+  &[data-theme="dark"] {
+    .expander__button {
+      color: $dark-title-color;
+
+      border-bottom: 1px solid $dark-title-color;
+    }
+
+    .expander__svg path {
+      stroke: $dark-title-color;
+    }
+
+    .expander__link {
+      color: $dark-title-color;
+    }
+  }
+
+  &[data-theme="light"] {
+    .expander__button {
+      color: $light-title-color;
+
+      border-bottom: 1px solid $light-main-text;
+    }
+
+    .expander__svg path {
+      stroke: $light-title-color;
+    }
+
+    .expander__link {
+      color: $light-main-text;
+    }
+  }
+}
+
+.expander {
+  overflow: hidden;
+
+  &--opened {
+    #{$root}__button {
+      #{$root}__svg--opened {
+        display: block;
+      }
+
+      #{$root}__svg--closed {
+        display: none;
+      }
+    }
+  }
+}
+
+.expander__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5px;
+
+  font-family: "Anonymous Pro";
+  font-size: 20px;
+  line-height: 27px;
+
+  cursor: pointer;
+  background: none;
+  border: none;
+
+  & > * {
+    pointer-events: none;
+  }
+}
+
+.expander__svg {
+  align-self: flex-start;
+  width: 16px;
+  height: 16px;
+
+  &--opened {
+    display: none;
+  }
+}
+
+.expander__content {
+  height: 0px;
+
+  transition: height 0.3s;
+}
+
+.expander__checkbox:checked ~ .expander__content {
+  max-height: 96px;
+}
+
+.expander__checkbox:checked ~ .expander__button {
+  .expander__svg--opened {
+    display: block;
+  }
+
+  .expander__svg--closed {
+    display: none;
+  }
+}
+
+.expander__text {
+  margin: 0;
+
+  line-height: 150%;
+}
+
+.expander__content-wrapper {
+  padding: 20px 0;
+}
+
+.expander__link-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.expander__content-svg {
+  flex-shrink: 0;
+  width: 30px;
+  height: 25px;
+}
+
+.expander__link {
+  font-weight: 500;
+  text-decoration: underline;
+
+  @media (min-width: 600px) {
+    font-size: 15px;
+  }
+}
+
+.expander__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+  list-style: none;
+  margin-top: 20px;
+
+  #{$root}__item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    &::before {
+      content: "";
+
+      display: block;
+      flex-shrink: 0;
+      width: 6px;
+      height: 6px;
+
+      background-color: $light-main-text;
+      border-radius: 50%;
+    }
+  }
+
+  #{$root}__alt-link {
+    color: $light-main-text;
+    text-decoration: none;
+    line-height: 150%;
+  }
+}
