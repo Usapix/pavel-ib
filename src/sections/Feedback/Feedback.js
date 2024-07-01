@@ -79,7 +79,7 @@ function Feedback() {
                   name="name"
                   id="feedback-name-field"
                 />
-                {nameDirty && nameError ? <p>{nameError}</p> : ""}
+                {nameDirty && nameError ? <span>{nameError}</span> : ""}
               </p>
               <p
                 className={`feedback-form-input-wrapper main-input ${
@@ -96,7 +96,7 @@ function Feedback() {
                   name="email"
                   id="feedback-email-field"
                 />
-                {emailDirty && emailError ? <p>{emailError}</p> : ""}
+                {emailDirty && emailError ? <span>{emailError}</span> : ""}
               </p>
             </div>
             <div className="feedback-form__button-wrapper">

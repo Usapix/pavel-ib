@@ -84,13 +84,17 @@ body {
 .make-safe__textarea-wrapper {
   height: 300px;
   margin-top: 9px;
-  padding: 20px;
+  padding: 25px;
   padding-left: 10px;
   padding-right: 9px;
 
   border-width: 1px;
   border-style: solid;
   border-radius: 6px;
+
+  &--error {
+    border-color: $input-error-color !important;
+  }
 }
 
 .make-safe__textarea {
@@ -139,6 +143,11 @@ body {
   width: 100%;
   margin-top: 40px;
   padding: 10px 20px;
+
+  &:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
 }
 
 .make-safe__consent {

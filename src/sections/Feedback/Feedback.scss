@@ -84,6 +84,7 @@ body {
 
   &:disabled {
     opacity: 0.4;
+    pointer-events: none;
   }
 }
 
@@ -123,7 +124,7 @@ body {
   }
 
   .feedback-form-input-wrapper {
-    flex-grow: 1;
+    width: 50%;
   }
 
   .feedback-form__button-wrapper {
