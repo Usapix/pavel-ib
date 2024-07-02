@@ -1,5 +1,7 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import SvgIcon from "../../components/SvgIcon/SvgIcon";
+
+import "./Testing.scss";
 
 function Testing() {
   const blocks = useRef(null);

@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
 
-function Preloader(props) {
+import "./Preloader.scss";
+
+function Preloader() {
   const wrapper = useRef(null);
   const text = useRef(null);
 

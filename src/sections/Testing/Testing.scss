@@ -53,167 +53,93 @@ body {
   pointer-events: none;
 }
 
-// @keyframes fall {
-//   0% {
-//     top: -500px;
-//     transform: rotate(-10deg);
-//   }
-
-//   60% {
-//     transform: rotate(-30deg);
-//   }
-
-//   100% {
-//     top: 0;
-//     transform: rotate(0deg);
-//   }
-// }
-
-// @keyframes fall-mobile {
-//   0% {
-//     top: -500px;
-//     transform: rotate(-10deg);
-//   }
-
-//   55% {
-//     transform: rotate(-30deg);
-//   }
-
-//   90% {
-//     transform: rotate(0deg);
-//   }
-
-//   100% {
-//     top: 0;
-//     transform: rotate(0deg);
-//   }
-// }
-
-// @keyframes fall-network {
-//   0% {
-//     top: -500px;
-//     transform: rotate(10deg);
-//   }
-
-//   30% {
-//     transform: rotate(20deg);
-//   }
-
-//   100% {
-//     top: 0;
-//     transform: rotate(0deg);
-//   }
-// }
-
-// @keyframes fall-infrastructure {
-//   0% {
-//     top: -500px;
-//     transform: rotate(10deg);
-//   }
-
-//   30% {
-//     transform: rotate(20deg);
-//   }
-
-//   100% {
-//     top: 0;
-//     transform: rotate(0deg);
-//   }
-// }
-
-// @keyframes fall-employees {
-//   0% {
-//     top: -500px;
-//     transform: rotate(10deg);
-//   }
-
-//   30% {
-//     transform: rotate(20deg);
-//   }
-
-//   100% {
-//     top: 0;
-//     transform: rotate(0deg);
-//   }
-// }
-
 @keyframes fall {
   0% {
-    transform: translateY(-500px) rotate(-10deg);
+    top: -500px;
+    transform: rotate(-10deg);
   }
 
   60% {
-    transform: translateY(-500px) rotate(-30deg);
+    transform: rotate(-30deg);
   }
 
   100% {
-    transform: translateY(0) rotate(0deg);
+    top: 0;
+    transform: rotate(0deg);
   }
 }
 
 @keyframes fall-mobile {
   0% {
-    transform: translateY(-500px) rotate(-10deg);
+    top: -500px;
+    transform: rotate(-10deg);
   }
 
   55% {
-    transform: translateY(-500px) rotate(-30deg);
+    transform: rotate(-30deg);
   }
 
   90% {
-    transform: translateY(0) rotate(0deg);
+    transform: rotate(0deg);
   }
 
   100% {
-    transform: translateY(0) rotate(0deg);
+    top: 0;
+    transform: rotate(0deg);
   }
 }
 
 @keyframes fall-network {
   0% {
-    transform: translateY(-500px) rotate(10deg);
+    top: -500px;
+    transform: rotate(10deg);
   }
 
   30% {
-    transform: translateY(-500px) rotate(20deg);
+    transform: rotate(20deg);
   }
 
   100% {
-    transform: translateY(0) rotate(0deg);
+    top: 0;
+    transform: rotate(0deg);
   }
 }
 
 @keyframes fall-infrastructure {
   0% {
-    transform: translateY(-500px) rotate(10deg);
+    top: -500px;
+    transform: rotate(10deg);
   }
 
   30% {
-    transform: translateY(-500px) rotate(20deg);
+    transform: rotate(20deg);
   }
 
   100% {
-    transform: translateY(0) rotate(0deg);
+    top: 0;
+    transform: rotate(0deg);
   }
 }
 
 @keyframes fall-employees {
   0% {
-    transform: translateY(-500px) rotate(10deg);
+    top: -500px;
+    transform: rotate(10deg);
   }
 
   30% {
-    transform: translateY(-500px) rotate(20deg);
+    transform: rotate(20deg);
   }
 
   100% {
-    transform: translateY(0) rotate(0deg);
+    top: 0;
+    transform: rotate(0deg);
   }
 }
 
 .testing__animate {
   .sites {
-    transform: translateY(-500px);
+    top: -500px;
 
     animation-name: fall;
     animation-duration: 1s;
@@ -224,7 +150,9 @@ body {
   }
 
   .info {
-    transform: translateY(-500px) rotate(-10deg);
+    top: -500px;
+
+    transform: rotate(-10deg);
     animation-name: fall;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -233,7 +161,8 @@ body {
   }
 
   .network {
-    transform: translateY(-500px) rotate(10deg);
+    top: -500px;
+    transform: rotate(10deg);
     animation-name: fall-network;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -242,7 +171,9 @@ body {
   }
 
   .infrastructure {
-    transform: translateY(-500px) rotate(10deg);
+    top: -500px;
+
+    transform: rotate(10deg);
     animation-name: fall-infrastructure;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -252,7 +183,9 @@ body {
   }
 
   .employees {
-    transform: translateY(-500px) rotate(10deg);
+    top: -500px;
+
+    transform: rotate(10deg);
     animation-name: fall-employees;
     animation-duration: 1s;
     animation-delay: 0.5s;
@@ -262,7 +195,9 @@ body {
   }
 
   .mobile {
-    transform: translateY(-500px) rotate(10deg);
+    top: -500px;
+
+    transform: rotate(10deg);
     animation-name: fall-mobile;
     animation-duration: 1s;
     animation-delay: 0.8s;
@@ -271,76 +206,6 @@ body {
     transition: 0.3s all;
   }
 }
-
-// .testing__animate {
-//   .sites {
-//     top: -500px;
-
-//     animation-name: fall;
-//     animation-duration: 1s;
-//     animation-fill-mode: forwards;
-//     animation-delay: 1s;
-
-//     transition: 0.3s all;
-//   }
-
-//   .info {
-//     top: -500px;
-
-//     transform: rotate(-10deg);
-//     animation-name: fall;
-//     animation-duration: 1s;
-//     animation-fill-mode: forwards;
-
-//     transition: 0.3s all;
-//   }
-
-//   .network {
-//     top: -500px;
-//     transform: rotate(10deg);
-//     animation-name: fall-network;
-//     animation-duration: 1s;
-//     animation-fill-mode: forwards;
-
-//     transition: 0.3s all;
-//   }
-
-//   .infrastructure {
-//     top: -500px;
-
-//     transform: rotate(10deg);
-//     animation-name: fall-infrastructure;
-//     animation-duration: 1s;
-//     animation-fill-mode: forwards;
-//     animation-delay: 0.2s;
-
-//     transition: 0.3s all;
-//   }
-
-//   .employees {
-//     top: -500px;
-
-//     transform: rotate(10deg);
-//     animation-name: fall-employees;
-//     animation-duration: 1s;
-//     animation-delay: 0.5s;
-//     animation-fill-mode: forwards;
-
-//     transition: 0.3s all;
-//   }
-
-//   .mobile {
-//     top: -500px;
-
-//     transform: rotate(10deg);
-//     animation-name: fall-mobile;
-//     animation-duration: 1s;
-//     animation-delay: 0.8s;
-//     animation-fill-mode: forwards;
-
-//     transition: 0.3s all;
-//   }
-// }
 
 .testing__list--740 {
   display: none;
