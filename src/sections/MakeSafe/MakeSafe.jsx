@@ -1,93 +1,29 @@
-import { useEffect, useState } from "react";
-
 import "./MakeSafe.scss";
+import useForm from "../../hooks/useForm/useForm";
 
 function MakeSafe() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [organization, setOrganization] = useState("");
-  const [message, setMessage] = useState("");
-
-  const [nameDirty, setNameDirty] = useState(false);
-  const [emailDirty, setEmailDirty] = useState(false);
-  const [organizationDirty, setOrganizationDirty] = useState(false);
-  const [messageDirty, setMessageDirty] = useState(false);
-
-  const [nameError, setNameError] = useState("Введите имя");
-  const [emailError, setEmailError] = useState("Введите почту");
-  const [organizationError, setOrganizationError] = useState("");
-  const [messageError, setMessageError] = useState("");
-
-  const [formValid, setFormValid] = useState(false);
-
-  useEffect(() => {
-    if (nameError || emailError || organizationError || messageError) {
-      setFormValid(false);
-    } else {
-      setFormValid(true);
-    }
-  }, [emailError, nameError, organizationError, messageError]);
-
-  const nameHandler = (e) => {
-    setName(e.target.value);
-    const nameRegex = /^(?!.*\s{2,})(?!^\s)(?!.*\s$)[a-zA-Zа-яА-ЯёЁ'\- ]+$/;
-    if (!nameRegex.test(e.target.value)) {
-      setNameError("Некорректное имя");
-    } else {
-      setNameError("");
-    }
-  };
-
-  const emailHandler = (e) => {
-    setEmail(e.target.value);
-
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(e.target.value)) {
-      setEmailError("Некорректный Email");
-    } else {
-      setEmailError("");
-    }
-  };
-
-  const organizationHandler = (e) => {
-    setOrganization(e.target.value);
-
-    const organizationRegex = /^(|\S.{5,})$/;
-    if (!organizationRegex.test(e.target.value)) {
-      setOrganizationError("Некорректное имя организации");
-    } else {
-      setOrganizationError("");
-    }
-  };
-
-  const messageHandler = (e) => {
-    setMessage(e.target.value);
-
-    const messageRegex = /^(|\S.{9,})$/;
-    if (!messageRegex.test(e.target.value)) {
-      setMessageError("Некорректный текст сообщения");
-    } else {
-      setMessageError("");
-    }
-  };
-
-  const blurHandler = (e) => {
-    switch (e.target.name) {
-      case "email":
-        setEmailDirty(true);
-        break;
-      case "name":
-        setNameDirty(true);
-        break;
-      case "org":
-        if (e.target.value !== "") setOrganizationDirty(true);
-        break;
-      case "subject":
-        if (e.target.value !== "") setMessageDirty(true);
-        break;
-      default:
-    }
-  };
+  const {
+    name,
+    email,
+    organization,
+    message,
+    nameDirty,
+    emailDirty,
+    organizationDirty,
+    messageDirty,
+    nameError,
+    emailError,
+    organizationError,
+    messageError,
+    formAvailable,
+    formMessage,
+    formHandler,
+    nameHandler,
+    emailHandler,
+    organizationHandler,
+    messageHandler,
+    blurHandler,
+  } = useForm();
 
   return (
     <section id="makeSafe" className="make-safe">
@@ -199,7 +135,7 @@ function MakeSafe() {
               <div className="make-safe__submit-wrapper">
                 <button
                   className="make-safe__submit button"
-                  disabled={!formValid}
+                  disabled={!formAvailable}
                 >
                   Записаться на консультацию
                 </button>

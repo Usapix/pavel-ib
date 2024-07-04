@@ -1,88 +1,21 @@
-import { useEffect, useState } from "react";
-
 import "./Feedback.scss";
+import useForm from "../../hooks/useForm/useForm";
 
 function Feedback() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [nameDirty, setNameDirty] = useState(false);
-  const [emailDirty, setEmailDirty] = useState(false);
-  const [nameError, setNameError] = useState("Введите имя");
-  const [emailError, setEmailError] = useState("Введите почту");
-  const [formAvailable, setFormAvailable] = useState(false);
-  const [formMessage, setFormMessage] = useState({
-    message: "",
-    isError: false,
-  });
-
-  useEffect(() => {
-    if (nameError || emailError) {
-      setFormAvailable(false);
-    } else {
-      setFormAvailable(true);
-    }
-  }, [emailError, nameError]);
-
-  function formHandler(e) {
-    e.preventDefault();
-
-    setFormAvailable(false);
-    setName("");
-    setEmail("");
-
-    const data = { name, email };
-    console.log(data);
-    fetch("/send_mail-1.php", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        setFormMessage({
-          message: data.message,
-          isError: data.status === "error",
-        });
-      })
-      .catch((error) => console.error(error));
-  }
-
-  const nameHandler = (e) => {
-    setFormMessage("");
-    setName(e.target.value);
-    const nameRegex = /^(?!.*\s{2,})(?!^\s)(?!.*\s$)[a-zA-Zа-яА-ЯёЁ'\- ]+$/;
-    if (!nameRegex.test(e.target.value)) {
-      setNameError("Некорректное имя");
-    } else {
-      setNameError("");
-    }
-  };
-
-  const emailHandler = (e) => {
-    setFormMessage("");
-    setEmail(e.target.value);
-
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(e.target.value)) {
-      setEmailError("Некорректный Email");
-    } else {
-      setEmailError("");
-    }
-  };
-
-  const blurHandler = (e) => {
-    switch (e.target.name) {
-      case "email":
-        setEmailDirty(true);
-        break;
-      case "name":
-        setNameDirty(true);
-        break;
-      default:
-    }
-  };
+  const {
+    name,
+    email,
+    nameDirty,
+    emailDirty,
+    nameError,
+    emailError,
+    formAvailable,
+    formMessage,
+    formHandler,
+    nameHandler,
+    emailHandler,
+    blurHandler,
+  } = useForm();
 
   return (
     <section className="feedback-form">

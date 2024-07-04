@@ -4,26 +4,6 @@ import SvgIcon from "../../components/SvgIcon/SvgIcon";
 
 import "./Header.scss";
 
-function toggleMenu() {
-  const button = document.querySelector(".main-header__burger");
-  const menu = document.querySelector(".main-header__navigation");
-  const body = document.querySelector("body");
-
-  if (document.documentElement.clientWidth < 941) {
-    button.classList.toggle("main-header__burger--opened");
-    menu.classList.toggle("main-header__navigation--opened");
-    body.classList.toggle("off-scroll");
-  }
-
-  window.addEventListener("resize", () => {
-    if (document.documentElement.clientWidth > 941) {
-      button.classList.remove("main-header__burger--opened");
-      menu.classList.remove("main-header__navigation--opened");
-      body.classList.remove("off-scroll");
-    }
-  });
-}
-
 let prevScrollPos = window.scrollY;
 
 function handleScroll(headerRef) {
@@ -51,8 +31,31 @@ function handleScroll(headerRef) {
   }
 }
 
+function toggleMenu(menuRef, burgerRef) {
+  if (!menuRef.current || !burgerRef.current) return;
+
+  const button = burgerRef.current;
+  const menu = menuRef.current;
+
+  if (document.documentElement.clientWidth < 941) {
+    button.classList.toggle("main-header__burger--opened");
+    menu.classList.toggle("main-header__navigation--opened");
+    document.body.classList.toggle("off-scroll");
+  }
+
+  window.addEventListener("resize", () => {
+    if (document.documentElement.clientWidth > 941) {
+      button.classList.remove("main-header__burger--opened");
+      menu.classList.remove("main-header__navigation--opened");
+      document.body.classList.remove("off-scroll");
+    }
+  });
+}
+
 function Header() {
   const headerRef = useRef(null);
+  const menuRef = useRef(null);
+  const burgerRef = useRef(null);
 
   useEffect(() => {
     const scrollHandler = () => {
@@ -80,7 +83,7 @@ function Header() {
           <div className="main-header__glare">
             <SvgIcon name="header-glare1" />
           </div>
-          <nav className="main-header__navigation">
+          <nav className="main-header__navigation" ref={menuRef}>
             <SvgIcon name="nav-glare1" />
             <SvgIcon name="nav-glare2" />
             <ul className="main-header__navigation-list">
@@ -88,7 +91,7 @@ function Header() {
                 <a
                   href="#testing"
                   className="main-header__navigation-link"
-                  onClick={toggleMenu}
+                  onClick={() => toggleMenu(menuRef, burgerRef)}
                 >
                   Услуги
                 </a>
@@ -97,7 +100,7 @@ function Header() {
                 <a
                   href="#about"
                   className="main-header__navigation-link"
-                  onClick={toggleMenu}
+                  onClick={() => toggleMenu(menuRef, burgerRef)}
                 >
                   Обо мне
                 </a>
@@ -106,7 +109,7 @@ function Header() {
                 <a
                   href="#contacts"
                   className="main-header__navigation-link"
-                  onClick={toggleMenu}
+                  onClick={() => toggleMenu(menuRef, burgerRef)}
                 >
                   Контакты
                 </a>
@@ -115,7 +118,7 @@ function Header() {
                 <a
                   href="#questions"
                   className="main-header__navigation-link"
-                  onClick={toggleMenu}
+                  onClick={() => toggleMenu(menuRef, burgerRef)}
                 >
                   Вопросы
                 </a>
@@ -123,7 +126,11 @@ function Header() {
             </ul>
           </nav>
           <ThemeToggle />
-          <button className="main-header__burger" onClick={toggleMenu}>
+          <button
+            className="main-header__burger"
+            onClick={() => toggleMenu(menuRef, burgerRef)}
+            ref={burgerRef}
+          >
             <span></span>
             <span></span>
             <span></span>
