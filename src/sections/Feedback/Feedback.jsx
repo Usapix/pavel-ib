@@ -9,19 +9,26 @@ function Feedback() {
   const [emailDirty, setEmailDirty] = useState(false);
   const [nameError, setNameError] = useState("Введите имя");
   const [emailError, setEmailError] = useState("Введите почту");
-  const [formValid, setFormValid] = useState(false);
-  const [formMessage, setFormMessage] = useState("");
+  const [formAvailable, setFormAvailable] = useState(false);
+  const [formMessage, setFormMessage] = useState({
+    message: "",
+    isError: false,
+  });
 
   useEffect(() => {
     if (nameError || emailError) {
-      setFormValid(false);
+      setFormAvailable(false);
     } else {
-      setFormValid(true);
+      setFormAvailable(true);
     }
   }, [emailError, nameError]);
 
   function formHandler(e) {
     e.preventDefault();
+
+    setFormAvailable(false);
+    setName("");
+    setEmail("");
 
     const data = { name, email };
     console.log(data);
@@ -34,12 +41,16 @@ function Feedback() {
     })
       .then((response) => response.json())
       .then((data) => {
-        setFormMessage(data.message);
+        setFormMessage({
+          message: data.message,
+          isError: data.status === "error",
+        });
       })
       .catch((error) => console.error(error));
   }
 
   const nameHandler = (e) => {
+    setFormMessage("");
     setName(e.target.value);
     const nameRegex = /^(?!.*\s{2,})(?!^\s)(?!.*\s$)[a-zA-Zа-яА-ЯёЁ'\- ]+$/;
     if (!nameRegex.test(e.target.value)) {
@@ -50,6 +61,7 @@ function Feedback() {
   };
 
   const emailHandler = (e) => {
+    setFormMessage("");
     setEmail(e.target.value);
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -124,7 +136,7 @@ function Feedback() {
               <button
                 className="feedback-form__button button"
                 type="submit"
-                disabled={!formValid}
+                disabled={!formAvailable}
               >
                 Давайте
               </button>
@@ -134,8 +146,14 @@ function Feedback() {
               </p>
             </div>
           </form>
-          {formMessage !== "" && (
-            <p className="feedback-form__form-message">{formMessage}</p>
+          {formMessage.message !== "" && (
+            <p
+              className={`feedback-form__form-message ${
+                formMessage.isError ? "feedback-form__form-message--error" : ""
+              }`}
+            >
+              {formMessage.message}
+            </p>
           )}
         </div>
       </div>

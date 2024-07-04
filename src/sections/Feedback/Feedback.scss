@@ -77,6 +77,10 @@ body {
 
 .feedback-form__form-message {
   color: $button-background;
+
+  &--error {
+    color: $input-error-color;
+  }
 }
 
 .feedback-form__button {
