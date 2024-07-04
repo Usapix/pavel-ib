@@ -1,6 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import ThemeToggle from "./ThemeToggle";
 import SvgIcon from "../../components/SvgIcon/SvgIcon";
+
+import "./Header.scss";
 
 function toggleMenu() {
   const button = document.querySelector(".main-header__burger");
@@ -31,8 +33,6 @@ function handleScroll(headerRef) {
 
   const headerHeight = headerHTML.offsetHeight;
   const scrollTop = window.scrollY;
-
-  console.log(scrollTop);
 
   if (prevScrollPos > scrollTop) {
     headerHTML.classList.add("show");

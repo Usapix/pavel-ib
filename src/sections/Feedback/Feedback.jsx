@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+
+import "./Feedback.scss";
 
 function Feedback() {
   const [name, setName] = useState("");
@@ -8,14 +10,21 @@ function Feedback() {
   const [nameError, setNameError] = useState("Введите имя");
   const [emailError, setEmailError] = useState("Введите почту");
   const [formValid, setFormValid] = useState(false);
-
   const [formMessage, setFormMessage] = useState("");
+
+  useEffect(() => {
+    if (nameError || emailError) {
+      setFormValid(false);
+    } else {
+      setFormValid(true);
+    }
+  }, [emailError, nameError]);
 
   function formHandler(e) {
     e.preventDefault();
 
     const data = { name, email };
-
+    console.log(data);
     fetch("/send_mail-1.php", {
       method: "POST",
       headers: {
@@ -29,14 +38,6 @@ function Feedback() {
       })
       .catch((error) => console.error(error));
   }
-
-  useEffect(() => {
-    if (nameError || emailError) {
-      setFormValid(false);
-    } else {
-      setFormValid(true);
-    }
-  }, [emailError, nameError]);
 
   const nameHandler = (e) => {
     setName(e.target.value);
@@ -82,8 +83,6 @@ function Feedback() {
           <form
             onSubmit={(e) => formHandler(e)}
             className="feedback-form__form"
-            action="send_mail-1.php"
-            method="post"
           >
             <div className="feedback-form__inputs-wrapper">
               <p

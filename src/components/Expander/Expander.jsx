@@ -1,5 +1,6 @@
-import React from "react";
 import SvgIcon from "../SvgIcon/SvgIcon";
+
+import "./Expander.scss";
 
 function Expander(props) {
   const toggleExpander = (e) => {

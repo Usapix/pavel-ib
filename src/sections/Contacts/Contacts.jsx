@@ -1,5 +1,6 @@
-import React from "react";
 import SvgIcon from "../../components/SvgIcon/SvgIcon";
+
+import "./Contacts.scss";
 
 function Contacts() {
   return (

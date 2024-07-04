@@ -1,7 +1,8 @@
-import React from "react";
 import Image from "../../components/Image/Image";
 import photo from "./images/pavel.png";
 import SvgIcon from "../../components/SvgIcon/SvgIcon";
+
+import "./Intro.scss";
 
 function Intro() {
   return (

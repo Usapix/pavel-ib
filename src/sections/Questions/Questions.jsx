@@ -1,6 +1,7 @@
-import React from "react";
 import Expander from "../../components/Expander/Expander";
 import SvgIcon from "../../components/SvgIcon/SvgIcon";
+
+import "./Questions.scss";
 
 function Questions() {
   return (

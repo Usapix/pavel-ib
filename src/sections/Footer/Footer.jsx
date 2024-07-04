@@ -1,4 +1,4 @@
-import React from "react";
+import "./Footer.scss";
 
 function getDate() {
   const date = new Date();
@@ -50,7 +50,7 @@ function Footer() {
                 <a
                   href="https://whittun.github.io/rsschool-cv/"
                   className="main-footer__creators-link"
-				  target="_blank"
+                  target="_blank"
                 >
                   Разработчик — Александр Шпанов
                 </a>
@@ -59,7 +59,7 @@ function Footer() {
                 <a
                   href="https://www.behance.net/57de399e"
                   className="main-footer__creators-link"
-				  target="_blank"
+                  target="_blank"
                 >
                   Дизайнер — Анастасия Гудечек
                 </a>

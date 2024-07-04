@@ -1,6 +1,44 @@
-@import "colors/generalColors.scss";
+$dark-switch-background: rgba(255, 255, 255, 0.2);
 
-@import "colors/darkThemeColors.scss";
-@import "colors/lightThemeColors.scss";
+$dark-font-color: #d0cfe2;
 
-@import "sizes/resolutions.scss";
+$dark-title-color: #d9d9d9;
+
+$dark-blur-color1: rgba(75, 225, 189, 0.3);
+$dark-blur-color2: rgba(59, 204, 152, 0.5);
+
+$dark-main-background: #05031f;
+$dark-content-background: #12102a;
+
+$dark-accent-background: rgba(255, 255, 255, 0.2);
+
+$button-background: #25814e;
+$button-hover-background: #185834;
+$button-textColor: #ffffff;
+
+$input-error-color: #eb5252;
+
+$theme-switch-color: #ffffff;
+
+$blur-color: rgba(255, 255, 255, 0.2);
+
+$light-main-background: #e7e7e7;
+
+$light-buttonFont-color: #ffffff;
+$light-altButton-color: #414141;
+
+$light-line-color: #646464;
+
+$light-switch-background: rgba(0, 0, 0, 0.1);
+
+$light-content-background: #dfdfdf;
+
+$light-stroke-color: #ffffff;
+
+$light-dull-text: #929292;
+$light-main-text: #646464;
+$light-title-color: #414141;
+
+$light-glare-fill: #3bcc7c;
+
+$mobile-resolution: 320px;
