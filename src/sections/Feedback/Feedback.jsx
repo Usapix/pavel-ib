@@ -25,7 +25,7 @@ function Feedback() {
 
     const data = { name, email };
     console.log(data);
-    fetch("/api/send_mail-1.php", {
+    fetch("/send_mail-1.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

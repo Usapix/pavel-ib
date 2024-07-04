@@ -13,11 +13,10 @@ export default defineConfig({
   },
   server: {
     proxy: {
-      "^/api": {
+      "^/send_mail-1.php": {
         target: "https://pavel-ib.ru",
         changeOrigin: true,
         secure: false,
-        rewrite: (path) => path.replace(/^\/api/, ""),
       },
     },
   },
