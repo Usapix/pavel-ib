@@ -10,6 +10,7 @@ function Feedback() {
   const [nameError, setNameError] = useState("Введите имя");
   const [emailError, setEmailError] = useState("Введите почту");
   const [formValid, setFormValid] = useState(false);
+  const [formMessage, setFormMessage] = useState("");
 
   useEffect(() => {
     if (nameError || emailError) {
@@ -18,6 +19,25 @@ function Feedback() {
       setFormValid(true);
     }
   }, [emailError, nameError]);
+
+  function formHandler(e) {
+    e.preventDefault();
+
+    const data = { name, email };
+    console.log(data);
+    fetch("/api/send_mail-1.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        setFormMessage(data.message);
+      })
+      .catch((error) => console.error(error));
+  }
 
   const nameHandler = (e) => {
     setName(e.target.value);
@@ -61,9 +81,8 @@ function Feedback() {
             <span className="break-line">ваш продукт вместе!</span>
           </h2>
           <form
+            onSubmit={(e) => formHandler(e)}
             className="feedback-form__form"
-            action="send_mail-1.php"
-            method="post"
           >
             <div className="feedback-form__inputs-wrapper">
               <p
@@ -115,6 +134,9 @@ function Feedback() {
               </p>
             </div>
           </form>
+          {formMessage !== "" && (
+            <p className="feedback-form__form-message">{formMessage}</p>
+          )}
         </div>
       </div>
     </section>

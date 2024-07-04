@@ -34,8 +34,6 @@ function handleScroll(headerRef) {
   const headerHeight = headerHTML.offsetHeight;
   const scrollTop = window.scrollY;
 
-  console.log(scrollTop);
-
   if (prevScrollPos > scrollTop) {
     headerHTML.classList.add("show");
   } else {
