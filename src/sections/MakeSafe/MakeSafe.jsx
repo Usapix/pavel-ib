@@ -99,7 +99,7 @@ function MakeSafe() {
           </h2>
           <form
             className="make-safe__form"
-            action="send_mail-2.php"
+            action="feedback.php"
             method="post"
           >
             <div className="make-safe__inputs">
