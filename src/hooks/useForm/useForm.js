@@ -13,8 +13,10 @@ function useForm() {
 
   const [nameError, setNameError] = useState("Введите имя");
   const [emailError, setEmailError] = useState("Введите почту");
-  const [organizationError, setOrganizationError] = useState("");
-  const [messageError, setMessageError] = useState("");
+  const [organizationError, setOrganizationError] = useState(
+    "Введите имя организации"
+  );
+  const [messageError, setMessageError] = useState("Введите сообщение");
 
   const [formAvailable, setFormAvailable] = useState(false);
   const [formMessage, setFormMessage] = useState({
@@ -37,9 +39,9 @@ function useForm() {
     setName("");
     setEmail("");
 
-    const data = { name, email };
-
-    fetch("/send_mail-1.php", {
+    const data = { name, email, org: organization, subject: message };
+    console.log(data);
+    fetch("/feedback.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -65,6 +67,10 @@ function useForm() {
     } else {
       setNameError("");
     }
+
+    if (e.target.value === "") {
+      setNameError("Введите имя");
+    }
   };
 
   const emailHandler = (e) => {
@@ -73,31 +79,43 @@ function useForm() {
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(e.target.value)) {
-      setEmailError("Некорректный Email");
+      setEmailError("Некорректная почта");
     } else {
       setEmailError("");
+    }
+
+    if (e.target.value === "") {
+      setEmailError("Введите почту");
     }
   };
 
   const organizationHandler = (e) => {
     setOrganization(e.target.value);
 
-    const organizationRegex = /^(|\S.{5,})$/;
+    const organizationRegex = /^(\S.{5,})$/;
     if (!organizationRegex.test(e.target.value)) {
       setOrganizationError("Некорректное имя организации");
     } else {
       setOrganizationError("");
+    }
+
+    if (e.target.value === "") {
+      setOrganizationError("Введите имя организации");
     }
   };
 
   const messageHandler = (e) => {
     setMessage(e.target.value);
 
-    const messageRegex = /^(|\S.{9,})$/;
+    const messageRegex = /^(\S.{9,})$/;
     if (!messageRegex.test(e.target.value)) {
       setMessageError("Некорректный текст сообщения");
     } else {
       setMessageError("");
+    }
+
+    if (e.target.value === "") {
+      setMessageError("Введите сообщение");
     }
   };
 
@@ -110,10 +128,10 @@ function useForm() {
         setNameDirty(true);
         break;
       case "org":
-        if (e.target.value !== "") setOrganizationDirty(true);
+        setOrganizationDirty(true);
         break;
       case "subject":
-        if (e.target.value !== "") setMessageDirty(true);
+        setMessageDirty(true);
         break;
       default:
     }

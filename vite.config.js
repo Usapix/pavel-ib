@@ -13,7 +13,7 @@ export default defineConfig({
   },
   server: {
     proxy: {
-      "^/send_mail-1.php": {
+      "^/feedback.php": {
         target: "https://pavel-ib.ru",
         changeOrigin: true,
         secure: false,

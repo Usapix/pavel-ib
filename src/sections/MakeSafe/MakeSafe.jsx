@@ -33,11 +33,7 @@ function MakeSafe() {
             Хочу сделать свой
             <span className="break-line">продукт безопасным!</span>
           </h2>
-          <form
-            className="make-safe__form"
-            action="send_mail-2.php"
-            method="post"
-          >
+          <form onSubmit={formHandler} className="make-safe__form">
             <div className="make-safe__inputs">
               <div className="make-safe__form-element">
                 <h3 className="make-safe__subtitle title">Контактное лицо</h3>
@@ -131,6 +127,17 @@ function MakeSafe() {
                     ""
                   )}
                 </p>
+                {formMessage.message !== "" && (
+                  <p
+                    className={`feedback-form__form-message ${
+                      formMessage.isError
+                        ? "feedback-form__form-message--error"
+                        : ""
+                    }`}
+                  >
+                    {formMessage.message}
+                  </p>
+                )}
               </div>
               <div className="make-safe__submit-wrapper">
                 <button
